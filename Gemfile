@@ -10,6 +10,7 @@ gem "rails", "~> 6.0.0.rc1"
 gem "puma", "~> 3.11"
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem "jbuilder", "~> 2.5"
+gem "react-rails"
 # Use SCSS for stylesheets
 gem "sass-rails", "~> 5"
 gem "sorbet-runtime"
