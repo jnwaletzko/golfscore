@@ -224,10 +224,6 @@ GEM
       childprocess (>= 0.5, < 2.0)
       rubyzip (~> 1.2, >= 1.2.2)
     shellany (0.0.1)
-    sorbet (0.4.4279)
-      sorbet-static (= 0.4.4279)
-    sorbet-runtime (0.4.4279)
-    sorbet-static (0.4.4279-universal-darwin-18)
     spring (2.1.0)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -287,8 +283,6 @@ DEPENDENCIES
   rspec
   sass-rails (~> 5)
   selenium-webdriver
-  sorbet
-  sorbet-runtime
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3 (~> 1.4)

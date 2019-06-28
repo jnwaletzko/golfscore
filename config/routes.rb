@@ -1,4 +1,3 @@
-# typed: strict
 Rails.application.routes.draw do
   namespace :v1, defaults: {format: :json} do
     get "holes", to: "holes#index"
