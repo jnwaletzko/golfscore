@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  resources :holes
   namespace :v1, defaults: {format: :json} do
-    get "holes", to: "holes#index"
+    resources :holes
   end
   # Forward all requests to StaticController#index but requests
   # must be non-Ajax (!req.xhr?) and HTML Mime type (req.format.html?)
