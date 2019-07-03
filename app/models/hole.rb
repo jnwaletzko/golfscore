@@ -16,4 +16,6 @@
 #
 
 class Hole < ApplicationRecord
+  validates :fairway_hit, inclusion: { in: [true, false] }
+  validates :green_in_regulation, inclusion: { in: [true, false] }
 end

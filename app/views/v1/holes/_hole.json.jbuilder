@@ -1,1 +1,11 @@
-json.extract! hole, :id, :created_at, :updated_at
+json.extract! hole, :id,
+  :number,
+  :par,
+  :yards,
+  :handicap,
+  :score,
+  :number_of_putts,
+  :green_in_regulation,
+  :fairway_hit,
+  :created_at,
+  :updated_at
