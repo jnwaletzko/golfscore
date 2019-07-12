@@ -21,6 +21,31 @@ RSpec.describe V1::HolesController, type: :controller do
   let!(:holes) { create_list(:hole, 10) }
   let(:hole_id) { holes.first.id }
 
+  let(:valid_attributes) do
+    {
+      number: Faker::Number.between(1, 18),
+      par: Faker::Number.between(3, 5),
+      yards: Faker::Number.number(3),
+      handicap: Faker::Number.between(1, 18),
+      score: Faker::Number.between(1, 14),
+      number_of_putts: Faker::Number.between(0, 5),
+      green_in_regulation: Faker::Boolean.boolean,
+      fairway_hit: Faker::Boolean.boolean,
+    }
+  end
+  let(:invalid_attributes) do
+    {
+      number: Faker::Number.between(1, 18),
+      par: Faker::Number.between(3, 5),
+      yards: Faker::Number.number(3),
+      handicap: Faker::Number.between(1, 18),
+      score: Faker::Number.between(1, 14),
+      number_of_putts: Faker::Number.between(0, 5),
+      green_in_regulation: nil,
+      fairway_hit: Faker::Boolean.boolean,
+    }
+  end
+
   describe "GET #index" do
     before { get :index, params: {format: :json} }
 
@@ -30,7 +55,7 @@ RSpec.describe V1::HolesController, type: :controller do
     end
 
     it "returns status code 200" do
-      expect(response).to have_http_status_code(200)
+      expect(response).to have_http_status(200)
     end
   end
 
@@ -61,32 +86,7 @@ RSpec.describe V1::HolesController, type: :controller do
     end
   end
 
-  fdescribe "POST #create" do
-    let(:valid_attributes) do
-      {
-        number: Faker::Number.between(1, 18),
-        par: Faker::Number.between(3, 5),
-        yards: Faker::Number.number(3),
-        handicap: Faker::Number.between(1, 18),
-        score: Faker::Number.between(1, 14),
-        number_of_putts: Faker::Number.between(0, 5),
-        green_in_regulation: Faker::Boolean.boolean,
-        fairway_hit: Faker::Boolean.boolean,
-      }
-    end
-    let(:invalid_attributes) do
-      {
-        number: Faker::Number.between(1, 18),
-        par: Faker::Number.between(3, 5),
-        yards: Faker::Number.number(3),
-        handicap: Faker::Number.between(1, 18),
-        score: Faker::Number.between(1, 14),
-        number_of_putts: Faker::Number.between(0, 5),
-        green_in_regulation: nil,
-        fairway_hit: Faker::Boolean.boolean,
-      }
-    end
-
+  describe "POST #create" do
     context "when the request is valid" do
       before { post :create, params: {hole: valid_attributes, format: :json} }
 
@@ -122,45 +122,47 @@ RSpec.describe V1::HolesController, type: :controller do
 
   describe "PUT #update" do
     context "with valid params" do
-      let(:new_attributes) {
-        skip("Add a hash of attributes valid for your model")
-      }
-
-      it "updates the requested hole" do
-        hole = Hole.create! valid_attributes
-        put :update, params: {id: hole.to_param, hole: new_attributes, format: :json}
-        hole.reload
-        skip("Add assertions for updated state")
+      before do
+        put :update, params: {id: hole_id, hole: valid_attributes, format: :json}
       end
 
-      it "redirects to the hole" do
-        hole = Hole.create! valid_attributes
-        put :update, params: {id: hole.to_param, hole: valid_attributes, format: :json}
-        expect(response).to redirect_to(hole)
+      it "updates the requested hole" do
+        expect(json["number"]).to eq(valid_attributes[:number])
+        expect(json["par"]).to eq(valid_attributes[:par])
+        expect(json["yards"].to_s).to eq(valid_attributes[:yards])
+        expect(json["handicap"]).to eq(valid_attributes[:handicap])
+        expect(json["score"]).to eq(valid_attributes[:score])
+        expect(json["number_of_putts"]).to eq(valid_attributes[:number_of_putts])
+        expect(json["green_in_regulation"]).to eq(valid_attributes[:green_in_regulation])
+        expect(json["fairway_hit"]).to eq(valid_attributes[:fairway_hit])
+      end
+
+      it "returns status code 200" do
+        expect(response).to have_http_status(200)
       end
     end
 
     context "with invalid params" do
+      before do
+        put :update, params: {id: hole_id, hole: invalid_attributes, format: :json}
+      end
+
       it "returns a success response (i.e. to display the 'edit' template)" do
-        hole = Hole.create! valid_attributes
-        put :update, params: {id: hole.to_param, hole: invalid_attributes, format: :json}
-        expect(response).to be_successful
+        expect(response).to have_http_status(422)
       end
     end
   end
 
   describe "DELETE #destroy" do
     it "destroys the requested hole" do
-      hole = Hole.create! valid_attributes
       expect {
-        delete :destroy, params: {id: hole.to_param, format: :json}
+        delete :destroy, params: {id: hole_id, format: :json}
       }.to change(Hole, :count).by(-1)
     end
 
     it "redirects to the holes list" do
-      hole = Hole.create! valid_attributes
-      delete :destroy, params: {id: hole.to_param, format: :json}
-      expect(response).to redirect_to(holes_url)
+      delete :destroy, params: {id: hole_id, format: :json}
+      expect(response).to have_http_status(200)
     end
   end
 

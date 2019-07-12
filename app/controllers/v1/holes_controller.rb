@@ -20,14 +20,14 @@ class V1::HolesController < ApplicationController
 
   # PATCH/PUT /holes/1.json
   def update
-    @hole.update(hole_params)
-    head :no_content
+    @hole.update!(hole_params)
+    json_response(@hole)
   end
 
   # DELETE /holes/1.json
   def destroy
     @hole.destroy
-    head :no_content
+    json_response(@hole)
   end
 
   private def set_hole
