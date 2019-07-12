@@ -15,9 +15,9 @@ ActiveRecord::Schema.define(version: 2019_07_01_225738) do
   create_table "holes", force: :cascade do |t|
     t.integer "number", null: false
     t.integer "par", null: false
-    t.integer "yards"
+    t.integer "yardage"
     t.integer "handicap"
-    t.integer "score", null: false
+    t.integer "strokes", null: false
     t.integer "number_of_putts", null: false
     t.boolean "green_in_regulation", null: false
     t.boolean "fairway_hit"

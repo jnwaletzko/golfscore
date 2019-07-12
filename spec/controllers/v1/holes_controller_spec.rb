@@ -5,9 +5,9 @@
 #  id                  :integer          not null, primary key
 #  number              :integer          not null
 #  par                 :integer          not null
-#  yards               :integer
+#  yardage             :integer
 #  handicap            :integer
-#  score               :integer          not null
+#  strokes             :integer          not null
 #  number_of_putts     :integer          not null
 #  green_in_regulation :boolean          not null
 #  fairway_hit         :boolean
@@ -25,9 +25,9 @@ RSpec.describe V1::HolesController, type: :controller do
     {
       number: Faker::Number.between(1, 18),
       par: Faker::Number.between(3, 5),
-      yards: Faker::Number.number(3),
+      yardage: Faker::Number.number(3),
       handicap: Faker::Number.between(1, 18),
-      score: Faker::Number.between(1, 14),
+      strokes: Faker::Number.between(1, 14),
       number_of_putts: Faker::Number.between(0, 5),
       green_in_regulation: Faker::Boolean.boolean,
       fairway_hit: Faker::Boolean.boolean,
@@ -37,9 +37,9 @@ RSpec.describe V1::HolesController, type: :controller do
     {
       number: Faker::Number.between(1, 18),
       par: Faker::Number.between(3, 5),
-      yards: Faker::Number.number(3),
+      yardage: Faker::Number.number(3),
       handicap: Faker::Number.between(1, 18),
-      score: Faker::Number.between(1, 14),
+      strokes: Faker::Number.between(1, 14),
       number_of_putts: Faker::Number.between(0, 5),
       green_in_regulation: nil,
       fairway_hit: Faker::Boolean.boolean,
@@ -93,9 +93,9 @@ RSpec.describe V1::HolesController, type: :controller do
       it "creates a new Hole" do
         expect(json["number"]).to eq(valid_attributes[:number])
         expect(json["par"]).to eq(valid_attributes[:par])
-        expect(json["yards"].to_s).to eq(valid_attributes[:yards])
+        expect(json["yardage"].to_s).to eq(valid_attributes[:yardage])
         expect(json["handicap"]).to eq(valid_attributes[:handicap])
-        expect(json["score"]).to eq(valid_attributes[:score])
+        expect(json["strokes"]).to eq(valid_attributes[:strokes])
         expect(json["number_of_putts"]).to eq(valid_attributes[:number_of_putts])
         expect(json["green_in_regulation"]).to eq(valid_attributes[:green_in_regulation])
         expect(json["fairway_hit"]).to eq(valid_attributes[:fairway_hit])
@@ -129,9 +129,9 @@ RSpec.describe V1::HolesController, type: :controller do
       it "updates the requested hole" do
         expect(json["number"]).to eq(valid_attributes[:number])
         expect(json["par"]).to eq(valid_attributes[:par])
-        expect(json["yards"].to_s).to eq(valid_attributes[:yards])
+        expect(json["yardage"].to_s).to eq(valid_attributes[:yardage])
         expect(json["handicap"]).to eq(valid_attributes[:handicap])
-        expect(json["score"]).to eq(valid_attributes[:score])
+        expect(json["strokes"]).to eq(valid_attributes[:strokes])
         expect(json["number_of_putts"]).to eq(valid_attributes[:number_of_putts])
         expect(json["green_in_regulation"]).to eq(valid_attributes[:green_in_regulation])
         expect(json["fairway_hit"]).to eq(valid_attributes[:fairway_hit])

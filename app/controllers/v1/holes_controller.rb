@@ -38,9 +38,9 @@ class V1::HolesController < ApplicationController
     params.fetch(:hole).permit(
       :number,
       :par,
-      :yards,
+      :yardage,
       :handicap,
-      :score,
+      :strokes,
       :number_of_putts,
       :green_in_regulation,
       :fairway_hit
