@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :holes
   namespace :v1, defaults: {format: :json} do
     resources :holes
   end
