@@ -17,7 +17,7 @@
 
 require "rails_helper"
 
-RSpec.describe V1::HolesController, type: :controller do
+RSpec.describe V1::HolesController, type: :request do
   let!(:holes) { create_list(:hole, 10) }
   let(:hole_id) { holes.first.id }
 
@@ -47,7 +47,7 @@ RSpec.describe V1::HolesController, type: :controller do
   end
 
   describe "GET #index" do
-    before { get :index, params: {format: :json} }
+    before { get "/v1/holes" }
 
     it "returns holes" do
       expect(json).not_to be_empty
@@ -60,7 +60,7 @@ RSpec.describe V1::HolesController, type: :controller do
   end
 
   describe "GET #show" do
-    before { get :show, params: {id: hole_id, format: :json} }
+    before { get "/v1/holes/#{hole_id}" }
 
     context "when the record exists" do
       it "returns the hole" do
@@ -88,7 +88,7 @@ RSpec.describe V1::HolesController, type: :controller do
 
   describe "POST #create" do
     context "when the request is valid" do
-      before { post :create, params: {hole: valid_attributes, format: :json} }
+      before { post "/v1/holes", params: {hole: valid_attributes} }
 
       it "creates a new Hole" do
         expect(json["number"]).to eq(valid_attributes[:number])
@@ -107,7 +107,7 @@ RSpec.describe V1::HolesController, type: :controller do
     end
 
     context "when the request is invalid" do
-      before { post :create, params: {hole: invalid_attributes, format: :json} }
+      before { post "/v1/holes", params: {hole: invalid_attributes} }
 
       it "creates a new Hole" do
         expect(response.body)
@@ -123,7 +123,7 @@ RSpec.describe V1::HolesController, type: :controller do
   describe "PUT #update" do
     context "with valid params" do
       before do
-        put :update, params: {id: hole_id, hole: valid_attributes, format: :json}
+        put "/v1/holes/#{hole_id}", params: {hole: valid_attributes}
       end
 
       it "updates the requested hole" do
@@ -144,7 +144,7 @@ RSpec.describe V1::HolesController, type: :controller do
 
     context "with invalid params" do
       before do
-        put :update, params: {id: hole_id, hole: invalid_attributes, format: :json}
+        put "/v1/holes/#{hole_id}", params: {hole: invalid_attributes}
       end
 
       it "returns a success response (i.e. to display the 'edit' template)" do
@@ -155,15 +155,12 @@ RSpec.describe V1::HolesController, type: :controller do
 
   describe "DELETE #destroy" do
     it "destroys the requested hole" do
-      expect {
-        delete :destroy, params: {id: hole_id, format: :json}
-      }.to change(Hole, :count).by(-1)
+      expect { delete "/v1/holes/#{hole_id}" }.to change(Hole, :count).by(-1)
     end
 
     it "redirects to the holes list" do
-      delete :destroy, params: {id: hole_id, format: :json}
+      delete "/v1/holes/#{hole_id}"
       expect(response).to have_http_status(200)
     end
   end
-
 end
