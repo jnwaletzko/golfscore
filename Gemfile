@@ -15,6 +15,7 @@ gem "jbuilder", "~> 2.5"
 gem "bootsnap", ">= 1.4.2", require: false
 
 group :development, :test do
+  gem "annotate"
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
   gem 'factory_bot_rails'
   gem 'faker'
@@ -24,7 +25,6 @@ group :development, :test do
 end
 
 group :development do
-  gem "annotate"
   gem "listen", ">= 3.0.5", "< 3.2"
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
@@ -36,5 +36,6 @@ group :test do
   gem "guard-rspec"
   gem "rspec-rails"
   gem "selenium-webdriver"
+  gem "shoulda-matchers"
   gem "webdrivers"
 end

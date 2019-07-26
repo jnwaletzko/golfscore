@@ -10,6 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2019_07_01_225738) do
+
+  create_table "holes", force: :cascade do |t|
+    t.integer "number", null: false
+    t.integer "par", null: false
+    t.integer "yardage"
+    t.integer "handicap"
+    t.integer "strokes", null: false
+    t.integer "number_of_putts", null: false
+    t.boolean "green_in_regulation", null: false
+    t.boolean "fairway_hit"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
 end
