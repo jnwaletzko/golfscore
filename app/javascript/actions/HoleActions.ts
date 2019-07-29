@@ -28,7 +28,7 @@ export const getAllHoles: ActionCreator<
     try {
       const response = await axios.get('/v1/holes');
       dispatch({
-        holes: response.data.holes,
+        holes: response.data,
         type: HoleActionTypes.GET_ALL,
       });
     } catch (err) {

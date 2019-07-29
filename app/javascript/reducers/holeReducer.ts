@@ -5,9 +5,12 @@ import {
 } from '../actions/HoleActions';
 
 export interface IHole {
+  id: number;
   number: number;
-  score: number;
-  putts: number;
+  par: number;
+  yardage: number;
+  strokes: number;
+  number_of_putts: number;
   notes: string;
 }
 

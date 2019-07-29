@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import { IAppState } from '../store/Store';
 
 import { IHole } from '../reducers/holeReducer';
+import { Box, GridListTile, Grid, Theme, Container } from '@material-ui/core';
+import { makeStyles, createStyles } from '@material-ui/styles';
 
 // Create the containers interface
 interface IProps {
@@ -13,17 +15,23 @@ interface IProps {
 class HoleList extends React.Component<IProps> {
   public render() {
     const { holes } = this.props;
+
     return (
-      <div className="name-container">
+      <Container fixed>
+        Them holes
         {holes &&
           holes.map(hole => {
             return (
-              <span key={hole.number} className="name">
-                {hole.number}
-              </span>
+              <Grid container>
+                <Grid item xs={1}>
+                  <div>
+                    {hole.number}
+                  </div>
+                </Grid>
+              </Grid>
             );
           })}
-      </div>
+      </Container>
     );
   }
 }
