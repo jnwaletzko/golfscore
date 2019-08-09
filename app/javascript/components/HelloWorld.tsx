@@ -1,6 +1,6 @@
 import * as React from "react"
 import Button from "@material-ui/core/Button";
-import HoleList from "../containers/HoleList";
+import HoleListContainer from "../containers/HoleListContainer";
 export interface Props {
   greeting: string;
 }
@@ -13,7 +13,7 @@ class HelloWorld extends React.Component<Props, object> {
         {/* <Button>
           Hey Dudes
         </Button> */}
-        <HoleList />
+        <HoleListContainer />
       </React.Fragment>
     );
   }

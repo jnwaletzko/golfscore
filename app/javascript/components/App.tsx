@@ -12,7 +12,7 @@ import { getAllHoles } from '../actions/HoleActions';
 
 import HelloWorld from './HelloWorld'
 import Game from "./Game";
-import HoleList from '../containers/HoleList';
+import HoleListContainer from '../containers/HoleListContainer';
 
 // Generate the store
 const store = configureStore();
@@ -25,7 +25,7 @@ class App extends React.Component {
         <BrowserRouter>
           <Switch>
             <Route exact path="/" render={() => ("Home!")} />
-            <Route path="/holes" render={() => <HoleList/>} />
+            <Route path="/holes" render={() => <HoleListContainer/>} />
             <Route path="/hello" render={() => <HelloWorld greeting="Friend"/>} />
             <Route path="/game" render={() => <Game/>} />
           </Switch>
