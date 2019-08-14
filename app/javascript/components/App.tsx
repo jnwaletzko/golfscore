@@ -10,8 +10,6 @@ import { Provider } from 'react-redux';
 import configureStore, { IAppState } from '../store/Store';
 import { getAllHoles } from '../actions/HoleActions';
 
-import HelloWorld from './HelloWorld'
-import Game from "./Game";
 import HoleListContainer from '../containers/HoleListContainer';
 
 // Generate the store
@@ -26,8 +24,6 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/" render={() => ("Home!")} />
             <Route path="/holes" render={() => <HoleListContainer/>} />
-            <Route path="/hello" render={() => <HelloWorld greeting="Friend"/>} />
-            <Route path="/game" render={() => <Game/>} />
           </Switch>
         </BrowserRouter>
       </Provider>
