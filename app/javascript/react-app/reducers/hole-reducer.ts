@@ -12,6 +12,7 @@ export interface IHole {
   strokes: number;
   number_of_putts: number;
   notes: string;
+  handicap: number;
 }
 
 export interface IHoleState {

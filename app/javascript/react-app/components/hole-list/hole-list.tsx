@@ -1,31 +1,41 @@
 import * as React from 'react';
-import { Grid } from '@material-ui/core';
+import { List, withStyles, createStyles, Theme, Divider } from '@material-ui/core';
 import { IHole } from '../../reducers/hole-reducer';
+import HoleListItem from './hole-list-item';
+
+const styles = (theme: Theme) => createStyles({
+  root: {
+    backgroundColor: theme.palette.background.paper,
+  },
+});
 
 // Create the components interface
 interface IProps {
   holes: IHole[];
+  classes: {
+    root: string
+  }
 }
 
 class HoleList extends React.Component<IProps> {
   render() {
     const { holes } = this.props;
+    const { classes } = this.props;
 
     return (
-      <Grid container>
+      <List className={classes.root}>
         {holes &&
           holes.map(hole => {
             return (
-              <Grid item xs={1}>
-                <div>
-                  {hole.number}
-                </div>
-              </Grid>
-            );
-          })}
-      </Grid>
-    )
+              <div>
+                <HoleListItem hole={hole}></HoleListItem>
+                <Divider variant="inset" component="li" />
+              </div>
+              );
+            })}
+      </List>
+    ) 
   }
 }
 
-export default HoleList
+export default withStyles(styles)(HoleList)

@@ -1,10 +1,9 @@
-import * as React from 'react';
-import { connect } from 'react-redux';
+import * as React from "react";
+import { connect } from "react-redux";
 
-import { IAppState } from '../../store';
+import { IAppState } from "../../store";
 
-import { IHole } from '../../reducers/hole-reducer';
-import { Container } from '@material-ui/core';
+import { IHole } from "../../reducers/hole-reducer";
 import HoleList from './hole-list';
 
 // Create the containers interface
@@ -15,15 +14,9 @@ interface IProps {
 class HoleListContainer extends React.Component<IProps> {
   render() {
     const { holes } = this.props;
-    const frontNine = holes.splice(0, 9);
-    const backNine = holes.splice(0, 9);
 
     return (
-      <Container fixed>
-        Them holes
-        <HoleList holes={frontNine} />
-        <HoleList holes={backNine} />
-      </Container>
+      <HoleList holes={holes}></HoleList>
     );
   }
 }
@@ -31,7 +24,7 @@ class HoleListContainer extends React.Component<IProps> {
 // Grab the characters from the store and make them available on props
 const mapStateToProps = (store: IAppState) => {
   return {
-    holes: store.holeState.holes,
+    holes: store.holeState.holes
   };
 };
 
