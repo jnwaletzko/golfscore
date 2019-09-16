@@ -16,6 +16,7 @@ import { getAllHoles } from "./actions/hole-actions";
 
 import HoleListContainer from "./components/hole-list/hole-list-container";
 import { grey, blueGrey } from '@material-ui/core/colors';
+import Header from './components/header/header';
 
 // Generate the store
 const store = configureStore();
@@ -40,6 +41,7 @@ class App extends React.Component {
       <Provider store={store}>
         <MuiThemeProvider theme={theme}>
           <CssBaseline />
+          <Header></Header>
           <Container fixed>
             <BrowserRouter>
               <Switch>
