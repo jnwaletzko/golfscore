@@ -17,12 +17,12 @@
 
 FactoryBot.define do
   factory :hole do
-    number { Faker::Number.between(1, 18) }
-    par { Faker::Number.between(3, 5) }
-    yardage { Faker::Number.number(3) }
-    handicap { Faker::Number.between(1, 18) }
-    strokes { Faker::Number.between(1, 14) }
-    number_of_putts { Faker::Number.between(0, 5) }
+    number { Faker::Number.between(from: 1, to: 18) }
+    par { Faker::Number.between(from: 3, to: 5) }
+    yardage { Faker::Number.number(digits: 3) }
+    handicap { Faker::Number.between(from: 1, to: 18) }
+    strokes { Faker::Number.between(from: 1, to: 14) }
+    number_of_putts { Faker::Number.between(from: 0, to: 5) }
     green_in_regulation { Faker::Boolean.boolean }
     fairway_hit { Faker::Boolean.boolean }
   end
