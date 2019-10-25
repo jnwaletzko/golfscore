@@ -50,13 +50,9 @@ RSpec.describe V1::HolesController, type: :request do
     before { get "/v1/holes" }
 
     it "returns holes" do
-      expect(json).not_to be_empty
+      expect(response).to have_http_status(200)
       expect(json.size).to eq(10)
       expect(json).to match_json_schema("holes/index")
-    end
-
-    it "returns status code 200" do
-      expect(response).to have_http_status(200)
     end
   end
 
@@ -65,23 +61,16 @@ RSpec.describe V1::HolesController, type: :request do
 
     context "when the record exists" do
       it "returns the hole" do
-        expect(json).not_to be_empty
-        expect(json["id"]).to eq(hole_id)
-      end
-
-      it "returns status code 200" do
         expect(response).to have_http_status(200)
+        expect(json).to match_json_schema("hole")
       end
     end
 
     context "when the record does not exist" do
       let(:hole_id) { 100 }
 
-      it "returns status code 404" do
+      it "returns status code 404 and a not found message" do
         expect(response).to have_http_status(404)
-      end
-
-      it "returns a not found message" do
         expect(response.body).to match(/Couldn't find Hole/)
       end
     end
@@ -110,12 +99,9 @@ RSpec.describe V1::HolesController, type: :request do
     context "when the request is invalid" do
       before { post "/v1/holes", params: {hole: invalid_attributes} }
 
-      it "creates a new Hole" do
+      it "raises a validation error and returns a 422" do
         expect(response.body)
           .to match(/Validation failed: Green in regulation is not included in the list/)
-      end
-
-      it "returns status code 422" do
         expect(response).to have_http_status(422)
       end
     end
