@@ -52,6 +52,7 @@ RSpec.describe V1::HolesController, type: :request do
     it "returns holes" do
       expect(json).not_to be_empty
       expect(json.size).to eq(10)
+      expect(json).to match_json_schema("holes/index")
     end
 
     it "returns status code 200" do
