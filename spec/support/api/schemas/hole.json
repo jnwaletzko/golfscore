@@ -1,0 +1,30 @@
+{
+  "id": "file:/hole.json#",
+  "type": "object",
+  "required": [
+    "id",
+    "created_at",
+    "fairway_hit",
+    "green_in_regulation",
+    "handicap",
+    "number_of_putts",
+    "number",
+    "par",
+    "strokes",
+    "updated_at",
+    "yardage"
+  ],
+  "properties": {
+    "id": { "type": "integer" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "fairway_hit": { "type": "boolean" },
+    "green_in_regulation": { "type": "boolean" },
+    "handicap": { "type": "integer" },
+    "number_of_putts": { "type": "integer" },
+    "number": { "type": "integer" },
+    "par": { "type": "integer" },
+    "strokes": { "type": "integer" },
+    "updated_at": { "type": "string", "format": "date-time" },
+    "yardage": { "type": "integer" }
+  }
+}

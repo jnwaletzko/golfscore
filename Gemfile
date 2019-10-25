@@ -37,5 +37,6 @@ group :test do
   gem "rspec-rails"
   gem "selenium-webdriver"
   gem "shoulda-matchers"
+  gem "json_matchers"
   gem "webdrivers"
 end

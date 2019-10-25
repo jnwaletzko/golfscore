@@ -48,8 +48,18 @@ guard :rspec, cmd: "bundle exec rspec" do
   watch(rails.controllers) do |m|
     [
       rspec.spec.call("routing/#{m[1]}_routing"),
+      rspec.spec.call("requests/#{m[1]}_controller"),
       rspec.spec.call("controllers/#{m[1]}_controller"),
       rspec.spec.call("acceptance/#{m[1]}"),
+    ]
+  end
+
+  # Rails models changes trigger controller specs
+  watch(%r{^app/models/(.+)\.rb$}) do |m|
+    [
+      rspec.spec.call("routing/v1/#{m[1]}s_routing"),
+      rspec.spec.call("requests/v1/#{m[1]}s_controller"),
+      rspec.spec.call("controllers/v1/#{m[1]}s_controller"),
     ]
   end
 
@@ -61,6 +71,24 @@ guard :rspec, cmd: "bundle exec rspec" do
   # Capybara features specs
   watch(rails.view_dirs) { |m| rspec.spec.call("features/#{m[1]}") }
   watch(rails.layouts) { |m| rspec.spec.call("features/#{m[1]}") }
+
+  # Factory Bot changes
+  watch(%r{^spec/factories/(.+)\.rb$}) do |m|
+    [
+      rspec.spec.call("routing/v1/#{m[1]}_routing"),
+      rspec.spec.call("requests/v1/#{m[1]}_controller"),
+      rspec.spec.call("controllers/v1/#{m[1]}_controller"),
+    ]
+  end
+
+  # JSON schema changes
+  watch(%r{^spec/support/api/schemas/(.+)\.json$}) do |m|
+    [
+      rspec.spec.call("routing/v1/#{m[1]}s_routing"),
+      rspec.spec.call("requests/v1/#{m[1]}s_controller"),
+      rspec.spec.call("controllers/v1/#{m[1]}s_controller"),
+    ]
+  end
 
   # Turnip features and steps
   watch(%r{^spec/acceptance/(.+)\.feature$})

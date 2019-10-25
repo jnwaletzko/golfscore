@@ -50,12 +50,9 @@ RSpec.describe V1::HolesController, type: :request do
     before { get "/v1/holes" }
 
     it "returns holes" do
-      expect(json).not_to be_empty
-      expect(json.size).to eq(10)
-    end
-
-    it "returns status code 200" do
       expect(response).to have_http_status(200)
+      expect(json.size).to eq(10)
+      expect(json).to match_json_schema("holes/index")
     end
   end
 
@@ -64,23 +61,16 @@ RSpec.describe V1::HolesController, type: :request do
 
     context "when the record exists" do
       it "returns the hole" do
-        expect(json).not_to be_empty
-        expect(json["id"]).to eq(hole_id)
-      end
-
-      it "returns status code 200" do
         expect(response).to have_http_status(200)
+        expect(json).to match_json_schema("hole")
       end
     end
 
     context "when the record does not exist" do
       let(:hole_id) { 100 }
 
-      it "returns status code 404" do
+      it "returns status code 404 and a not found message" do
         expect(response).to have_http_status(404)
-      end
-
-      it "returns a not found message" do
         expect(response.body).to match(/Couldn't find Hole/)
       end
     end
@@ -91,17 +81,8 @@ RSpec.describe V1::HolesController, type: :request do
       before { post "/v1/holes", params: {hole: valid_attributes} }
 
       it "creates a new Hole" do
-        expect(json["number"]).to eq(valid_attributes[:number])
-        expect(json["par"]).to eq(valid_attributes[:par])
-        expect(json["yardage"].to_s).to eq(valid_attributes[:yardage])
-        expect(json["handicap"]).to eq(valid_attributes[:handicap])
-        expect(json["strokes"]).to eq(valid_attributes[:strokes])
-        expect(json["number_of_putts"]).to eq(valid_attributes[:number_of_putts])
-        expect(json["green_in_regulation"]).to eq(valid_attributes[:green_in_regulation])
-        expect(json["fairway_hit"]).to eq(valid_attributes[:fairway_hit])
-      end
-
-      it "returns status code 201" do
+        expect(json.fetch("id")).to be_present
+        expect(json).to match_json_schema("hole")
         expect(response).to have_http_status(201)
       end
     end
@@ -109,12 +90,9 @@ RSpec.describe V1::HolesController, type: :request do
     context "when the request is invalid" do
       before { post "/v1/holes", params: {hole: invalid_attributes} }
 
-      it "creates a new Hole" do
+      it "raises a validation error and returns a 422" do
         expect(response.body)
           .to match(/Validation failed: Green in regulation is not included in the list/)
-      end
-
-      it "returns status code 422" do
         expect(response).to have_http_status(422)
       end
     end
@@ -127,17 +105,8 @@ RSpec.describe V1::HolesController, type: :request do
       end
 
       it "updates the requested hole" do
-        expect(json["number"]).to eq(valid_attributes[:number])
-        expect(json["par"]).to eq(valid_attributes[:par])
-        expect(json["yardage"].to_s).to eq(valid_attributes[:yardage])
-        expect(json["handicap"]).to eq(valid_attributes[:handicap])
-        expect(json["strokes"]).to eq(valid_attributes[:strokes])
-        expect(json["number_of_putts"]).to eq(valid_attributes[:number_of_putts])
-        expect(json["green_in_regulation"]).to eq(valid_attributes[:green_in_regulation])
-        expect(json["fairway_hit"]).to eq(valid_attributes[:fairway_hit])
-      end
-
-      it "returns status code 200" do
+        expect(json.fetch("id")).to be(hole_id)
+        expect(json).to match_json_schema("hole")
         expect(response).to have_http_status(200)
       end
     end
