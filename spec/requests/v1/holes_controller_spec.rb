@@ -81,17 +81,8 @@ RSpec.describe V1::HolesController, type: :request do
       before { post "/v1/holes", params: {hole: valid_attributes} }
 
       it "creates a new Hole" do
-        expect(json["number"]).to eq(valid_attributes[:number])
-        expect(json["par"]).to eq(valid_attributes[:par])
-        expect(json["yardage"].to_s).to eq(valid_attributes[:yardage])
-        expect(json["handicap"]).to eq(valid_attributes[:handicap])
-        expect(json["strokes"]).to eq(valid_attributes[:strokes])
-        expect(json["number_of_putts"]).to eq(valid_attributes[:number_of_putts])
-        expect(json["green_in_regulation"]).to eq(valid_attributes[:green_in_regulation])
-        expect(json["fairway_hit"]).to eq(valid_attributes[:fairway_hit])
-      end
-
-      it "returns status code 201" do
+        expect(json.fetch("id")).to be_present
+        expect(json).to match_json_schema("hole")
         expect(response).to have_http_status(201)
       end
     end
@@ -114,17 +105,8 @@ RSpec.describe V1::HolesController, type: :request do
       end
 
       it "updates the requested hole" do
-        expect(json["number"]).to eq(valid_attributes[:number])
-        expect(json["par"]).to eq(valid_attributes[:par])
-        expect(json["yardage"].to_s).to eq(valid_attributes[:yardage])
-        expect(json["handicap"]).to eq(valid_attributes[:handicap])
-        expect(json["strokes"]).to eq(valid_attributes[:strokes])
-        expect(json["number_of_putts"]).to eq(valid_attributes[:number_of_putts])
-        expect(json["green_in_regulation"]).to eq(valid_attributes[:green_in_regulation])
-        expect(json["fairway_hit"]).to eq(valid_attributes[:fairway_hit])
-      end
-
-      it "returns status code 200" do
+        expect(json.fetch("id")).to be(hole_id)
+        expect(json).to match_json_schema("hole")
         expect(response).to have_http_status(200)
       end
     end
