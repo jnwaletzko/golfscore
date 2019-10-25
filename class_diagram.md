@@ -2,21 +2,25 @@
 classDiagram
   class Hole
   Hole : +Integer number
+  Hole : +Integer yardage
   Hole : +Integer par
   Hole : +Integer handicap
-  Hole : -Integer course_id
+  Hole : -Integer tee_id
 
   class Course
   Course : +String name
   Course : +String url
 
+  class Tee
+  Tee : +String color
+  Tee : +Integer total_yardage
+  Tee : +Integer course_id
+
   class Round
   Round : +Date played_on
-  Round : -Integer course_id
-
+  Round : -Integer tee_id
 
   class ScoreEntry
-  ScoreEntry : +Integer yardage
   ScoreEntry : +Integer strokes
   ScoreEntry : +Integer number_of_putts
   ScoreEntry : +Boolean green_in_regulation
@@ -24,9 +28,9 @@ classDiagram
   ScoreEntry : -Integer hole_id
   ScoreEntry : -Integer round_id
 
-
-  Course "1" --> "*" Hole
+  Course "1" --> "*" Tee
+  Tee "1" --> "*" Hole
   Hole "1" --> "*" ScoreEntry
   Round "1" --> "*" ScoreEntry
-  Course "1" --> "*" Round
+  Tee "1" --> "*" Round
 ```

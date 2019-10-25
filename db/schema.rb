@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_01_225738) do
+ActiveRecord::Schema.define(version: 2019_10_25_190217) do
+
+  create_table "courses", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "url"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "holes", force: :cascade do |t|
     t.integer "number", null: false
