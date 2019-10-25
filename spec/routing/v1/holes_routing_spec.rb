@@ -20,7 +20,7 @@ require "rails_helper"
 RSpec.describe V1::HolesController, type: :routing do
   describe "routing" do
     it "routes to #index" do
-      expect(get: "/v1/holes").to route_to("v1/holes#index", format: :json, format: :json)
+      expect(get: "/v1/holes").to route_to("v1/holes#index", format: :json)
     end
 
     it "routes to #new" do
