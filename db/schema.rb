@@ -34,7 +34,6 @@ ActiveRecord::Schema.define(version: 2019_11_22_025331) do
 
   create_table "tees", force: :cascade do |t|
     t.string "color", null: false
-    t.string "difficulty", null: false
     t.integer "total_yardage", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

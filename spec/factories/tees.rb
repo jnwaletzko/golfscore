@@ -4,7 +4,6 @@
 #
 #  id            :integer          not null, primary key
 #  color         :string           not null
-#  difficulty    :string           not null
 #  total_yardage :integer          not null
 #  created_at    :datetime         not null
 #  updated_at    :datetime         not null
@@ -21,6 +20,8 @@
 
 FactoryBot.define do
   factory :tee do
-    
+    color { Faker::Color.color_name }
+    total_yardage { Faker::Number.number(digits: 4) }
+    course
   end
 end
