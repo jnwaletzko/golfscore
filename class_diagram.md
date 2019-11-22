@@ -13,6 +13,7 @@ classDiagram
 
   class Tee
   Tee : +String color
+  Tee : +String difficulty
   Tee : +Integer total_yardage
   Tee : +Integer course_id
 
