@@ -3,16 +3,17 @@
 # Table name: holes
 #
 #  id                  :integer          not null, primary key
-#  number              :integer          not null
-#  par                 :integer          not null
-#  yardage             :integer
-#  handicap            :integer
-#  strokes             :integer          not null
-#  number_of_putts     :integer          not null
-#  green_in_regulation :boolean          not null
 #  fairway_hit         :boolean
+#  green_in_regulation :boolean          not null
+#  handicap            :integer
+#  number              :integer          not null
+#  number_of_putts     :integer          not null
+#  par                 :integer          not null
+#  strokes             :integer          not null
+#  yardage             :integer
 #  created_at          :datetime         not null
 #  updated_at          :datetime         not null
+#  tee_id              :integer
 #
 
 require "rails_helper"

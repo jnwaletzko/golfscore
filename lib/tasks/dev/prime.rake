@@ -7,10 +7,10 @@ if Rails.env.development? || Rails.env.test?
       include FactoryBot::Syntax::Methods
 
       course = create(:course)
-      create(:tee, course: course)
+      tee = create(:tee, course: course)
 
       [*1..18].each do |hole_number|
-        create(:hole, number: hole_number)
+        create(:hole, tee: tee, number: hole_number)
       end
     end
   end
