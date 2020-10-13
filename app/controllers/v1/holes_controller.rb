@@ -43,7 +43,8 @@ class V1::HolesController < ApplicationController
       :strokes,
       :number_of_putts,
       :green_in_regulation,
-      :fairway_hit
+      :fairway_hit,
+      :tee_id
     )
   end
 end

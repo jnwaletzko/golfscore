@@ -26,5 +26,7 @@ FactoryBot.define do
     number_of_putts { Faker::Number.between(from: 0, to: 5) }
     green_in_regulation { Faker::Boolean.boolean }
     fairway_hit { Faker::Boolean.boolean }
+
+    tee
   end
 end
