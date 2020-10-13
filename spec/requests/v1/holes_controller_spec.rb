@@ -20,6 +20,7 @@ require "rails_helper"
 RSpec.describe V1::HolesController, type: :request do
   let!(:holes) { create_list(:hole, 10) }
   let(:hole_id) { holes.first.id }
+  let(:tee) { create(:tee) }
 
   let(:valid_attributes) do
     {
@@ -31,6 +32,7 @@ RSpec.describe V1::HolesController, type: :request do
       number_of_putts: Faker::Number.between(from: 0, to: 5),
       green_in_regulation: Faker::Boolean.boolean,
       fairway_hit: Faker::Boolean.boolean,
+      tee_id: tee.id
     }
   end
   let(:invalid_attributes) do
@@ -43,6 +45,7 @@ RSpec.describe V1::HolesController, type: :request do
       number_of_putts: Faker::Number.between(from: 0, to: 5),
       green_in_regulation: nil,
       fairway_hit: Faker::Boolean.boolean,
+      tee_id: tee.id
     }
   end
 

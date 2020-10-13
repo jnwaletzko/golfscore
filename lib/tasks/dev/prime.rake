@@ -6,10 +6,11 @@ if Rails.env.development? || Rails.env.test?
     task prime: "db:setup" do
       include FactoryBot::Syntax::Methods
 
-      create(:course)
+      course = create(:course)
+      tee = create(:tee, course: course)
 
       [*1..18].each do |hole_number|
-        create(:hole, number: hole_number)
+        create(:hole, tee: tee, number: hole_number)
       end
     end
   end

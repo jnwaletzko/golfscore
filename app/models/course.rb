@@ -10,6 +10,8 @@
 #
 
 class Course < ApplicationRecord
+  has_many :tees
+
   validates :name, presence: true
   validates :url, format: URI.regexp(%w[http https])
 end
