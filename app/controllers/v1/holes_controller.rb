@@ -1,3 +1,4 @@
+# typed: true
 class V1::HolesController < ApplicationController
   before_action :set_hole, only: [:show, :update, :destroy]
 

@@ -1,3 +1,4 @@
+# typed: true
 class CreateTees < ActiveRecord::Migration[6.0]
   def change
     create_table :tees do |t|

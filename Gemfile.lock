@@ -254,6 +254,10 @@ GEM
     shellany (0.0.1)
     shoulda-matchers (4.4.1)
       activesupport (>= 4.2.0)
+    sorbet (0.5.5947)
+      sorbet-static (= 0.5.5947)
+    sorbet-runtime (0.5.5947)
+    sorbet-static (0.5.5947-universal-darwin-14)
     spring (2.1.1)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -321,6 +325,8 @@ DEPENDENCIES
   sass-rails (~> 5)
   selenium-webdriver
   shoulda-matchers
+  sorbet
+  sorbet-runtime
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3 (~> 1.4)

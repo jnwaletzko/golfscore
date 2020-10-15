@@ -1,3 +1,4 @@
+# typed: strict
 class ApplicationController < ActionController::Base
   include Response
   include ExceptionHandler
