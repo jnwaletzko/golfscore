@@ -20,17 +20,17 @@ classDiagram
   Round : +Date played_on
   Round : -Integer tee_id
 
-  class ScoreEntry
-  ScoreEntry : +Integer strokes
-  ScoreEntry : +Integer number_of_putts
-  ScoreEntry : +Boolean green_in_regulation
-  ScoreEntry : +Boolean fairway_hit
-  ScoreEntry : -Integer hole_id
-  ScoreEntry : -Integer round_id
+  class HoleScore
+  HoleScore : +Integer strokes
+  HoleScore : +Integer number_of_putts
+  HoleScore : +Boolean green_in_regulation
+  HoleScore : +Boolean fairway_hit
+  HoleScore : -Integer hole_id
+  HoleScore : -Integer round_id
 
   Course "1" --> "*" Tee
   Tee "1" --> "*" Hole
-  Hole "1" --> "*" ScoreEntry
-  Round "1" --> "*" ScoreEntry
+  Hole "1" --> "*" HoleScore
+  Round "1" --> "*" HoleScore
   Tee "1" --> "*" Round
 ```

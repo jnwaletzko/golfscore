@@ -3,18 +3,14 @@
 #
 # Table name: holes
 #
-#  id                  :integer          not null, primary key
-#  fairway_hit         :boolean
-#  green_in_regulation :boolean          not null
-#  handicap            :integer
-#  number              :integer          not null
-#  number_of_putts     :integer          not null
-#  par                 :integer          not null
-#  strokes             :integer          not null
-#  yardage             :integer
-#  created_at          :datetime         not null
-#  updated_at          :datetime         not null
-#  tee_id              :integer
+#  id         :integer          not null, primary key
+#  handicap   :integer
+#  number     :integer          not null
+#  par        :integer          not null
+#  yardage    :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#  tee_id     :integer
 #
 
 require "rails_helper"
@@ -49,20 +45,6 @@ RSpec.describe Hole, type: :model do
         .only_integer
         .is_greater_than(0)
         .is_less_than_or_equal_to(18)
-    }
-
-    it {
-      should validate_numericality_of(:strokes)
-        .only_integer
-        .is_greater_than(0)
-        .is_less_than_or_equal_to(20)
-    }
-
-    it {
-      should validate_numericality_of(:number_of_putts)
-        .only_integer
-        .is_greater_than_or_equal_to(0)
-        .is_less_than_or_equal_to(20)
     }
   end
 end
