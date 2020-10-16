@@ -29,10 +29,6 @@ RSpec.describe V1::HolesController, type: :request do
       par: Faker::Number.between(from: 3, to: 5),
       yardage: Faker::Number.number(digits: 3).to_s,
       handicap: Faker::Number.between(from: 1, to: 18),
-      strokes: Faker::Number.between(from: 1, to: 14),
-      number_of_putts: Faker::Number.between(from: 0, to: 5),
-      green_in_regulation: Faker::Boolean.boolean,
-      fairway_hit: Faker::Boolean.boolean,
       tee_id: tee.id
     }
   end
@@ -40,12 +36,8 @@ RSpec.describe V1::HolesController, type: :request do
     {
       number: Faker::Number.between(from: 1, to: 18),
       par: Faker::Number.between(from: 3, to: 5),
-      yardage: Faker::Number.number(digits: 3).to_s,
+      yardage: nil,
       handicap: Faker::Number.between(from: 1, to: 18),
-      strokes: Faker::Number.between(from: 1, to: 14),
-      number_of_putts: Faker::Number.between(from: 0, to: 5),
-      green_in_regulation: nil,
-      fairway_hit: Faker::Boolean.boolean,
       tee_id: tee.id
     }
   end
@@ -96,7 +88,7 @@ RSpec.describe V1::HolesController, type: :request do
 
       it "raises a validation error and returns a 422" do
         expect(response.body)
-          .to match(/Validation failed: Green in regulation is not included in the list/)
+          .to match(/Validation failed: Yardage can't be blank, Yardage is not a number/)
         expect(response).to have_http_status(422)
       end
     end

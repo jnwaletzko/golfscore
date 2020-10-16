@@ -1,4 +1,3 @@
-# typed: strict
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -11,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_11_221328) do
+ActiveRecord::Schema.define(version: 2020_10_16_225009) do
 
   create_table "courses", force: :cascade do |t|
     t.string "name", null: false
@@ -20,15 +19,23 @@ ActiveRecord::Schema.define(version: 2020_10_11_221328) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "hole_scores", force: :cascade do |t|
+    t.integer "strokes", null: false
+    t.integer "number_of_putts", null: false
+    t.boolean "green_in_regulation", null: false
+    t.boolean "fairway_hit"
+    t.text "notes"
+    t.integer "hole_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["hole_id"], name: "index_hole_scores_on_hole_id"
+  end
+
   create_table "holes", force: :cascade do |t|
     t.integer "number", null: false
     t.integer "par", null: false
     t.integer "yardage"
     t.integer "handicap"
-    t.integer "strokes", null: false
-    t.integer "number_of_putts", null: false
-    t.boolean "green_in_regulation", null: false
-    t.boolean "fairway_hit"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "tee_id"
@@ -43,5 +50,6 @@ ActiveRecord::Schema.define(version: 2020_10_11_221328) do
     t.index ["course_id"], name: "index_tees_on_course_id"
   end
 
+  add_foreign_key "hole_scores", "holes"
   add_foreign_key "tees", "courses"
 end
