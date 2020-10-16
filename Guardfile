@@ -50,7 +50,7 @@ guard :rspec, cmd: "bundle exec rspec" do
       rspec.spec.call("routing/#{m[1]}_routing"),
       rspec.spec.call("requests/#{m[1]}_controller"),
       rspec.spec.call("controllers/#{m[1]}_controller"),
-      rspec.spec.call("acceptance/#{m[1]}"),
+      rspec.spec.call("acceptance/#{m[1]}")
     ]
   end
 
@@ -59,7 +59,7 @@ guard :rspec, cmd: "bundle exec rspec" do
     [
       rspec.spec.call("routing/v1/#{m[1]}s_routing"),
       rspec.spec.call("requests/v1/#{m[1]}s_controller"),
-      rspec.spec.call("controllers/v1/#{m[1]}s_controller"),
+      rspec.spec.call("controllers/v1/#{m[1]}s_controller")
     ]
   end
 
@@ -77,7 +77,7 @@ guard :rspec, cmd: "bundle exec rspec" do
     [
       rspec.spec.call("routing/v1/#{m[1]}_routing"),
       rspec.spec.call("requests/v1/#{m[1]}_controller"),
-      rspec.spec.call("controllers/v1/#{m[1]}_controller"),
+      rspec.spec.call("controllers/v1/#{m[1]}_controller")
     ]
   end
 
@@ -86,7 +86,7 @@ guard :rspec, cmd: "bundle exec rspec" do
     [
       rspec.spec.call("routing/v1/#{m[1]}s_routing"),
       rspec.spec.call("requests/v1/#{m[1]}s_controller"),
-      rspec.spec.call("controllers/v1/#{m[1]}s_controller"),
+      rspec.spec.call("controllers/v1/#{m[1]}s_controller")
     ]
   end
 
@@ -95,4 +95,17 @@ guard :rspec, cmd: "bundle exec rspec" do
   watch(%r{^spec/acceptance/steps/(.+)_steps\.rb$}) do |m|
     Dir[File.join("**/#{m[1]}.feature")][0] || "spec/acceptance"
   end
+end
+
+# You can choose to pass an option to the guard-standardrb plugin
+# to fix easy issues
+
+# guard :standardrb, fix: true do
+#   UI.info 'StandardRb is initialized'
+#   watch(/.+\.rb$/)
+# end
+
+guard :standardrb, fix: true do
+  UI.info "StandardRb is initialized"
+  watch(/.+\.rb$/)
 end
