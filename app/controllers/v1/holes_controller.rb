@@ -1,3 +1,4 @@
+# typed: true
 class V1::HolesController < ApplicationController
   before_action :set_hole, only: [:show, :update, :destroy]
 
@@ -34,6 +35,11 @@ class V1::HolesController < ApplicationController
     @hole = Hole.find(params[:id])
   end
 
+  class HoleParams < T::Struct
+    const :id, T.nilable(Integer)
+    const :show, T.nilable(T::Boolean)
+    const :wands, T::Array[Integer]
+  end
   private def hole_params
     params.fetch(:hole).permit(
       :number,

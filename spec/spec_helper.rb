@@ -1,3 +1,4 @@
+# typed: strict
 require "faker"
 require "json_matchers/rspec"
 
