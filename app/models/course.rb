@@ -13,5 +13,5 @@ class Course < ApplicationRecord
   has_many :tees
 
   validates :name, presence: true
-  validates :url, format: URI.regexp(%w[http https])
+  validates :url, format: URI::DEFAULT_PARSER.make_regexp(%w[http https])
 end
