@@ -20,9 +20,8 @@ class HoleListItem extends React.Component<IProps> {
           </Avatar>
         </ListItemAvatar>
         <ListItemText primary={hole.number} secondary={`Handicap ${hole.handicap}`} />
-        <ListItemText 
-          primary={`Par ${hole.par} ${hole.yardage} yards`} 
-          secondary={`Strokes: ${hole.strokes} Putts: ${hole.number_of_putts}`}
+        <ListItemText
+          primary={`Par ${hole.par} ${hole.yardage} yards`}
         />
       </ListItem>
     )
