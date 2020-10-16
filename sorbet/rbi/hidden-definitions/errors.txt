@@ -625,8 +625,14 @@
 # Did you mean?  ActionMailbox::InboundEmail::NAME_COMPILABLE_REGEXP
 # uninitialized constant ActionMailbox::InboundEmail(Table doesn't exist)::RESTRICTED_CLASS_METHODS
 # Did you mean?  ActionMailbox::InboundEmail::RESTRICTED_CLASS_METHODS
+# wrong constant name <Class:Status>
 # uninitialized constant ActionMailbox::InboundEmail(Table doesn't exist)::UNASSIGNABLE_KEYS
 # Did you mean?  ActionMailbox::InboundEmail::UNASSIGNABLE_KEYS
+# wrong constant name typed_status
+# wrong constant name typed_status=
+# undefined singleton method `sealed_subclasses' for `ActionMailbox::InboundEmail::Status'
+# wrong constant name <static-init>
+# wrong constant name sealed_subclasses
 # uninitialized constant ActionMailer::Base::CALLBACK_FILTER_TYPES
 # uninitialized constant ActionMailer::Base::DEFAULT_PROTECTED_INSTANCE_VARIABLES
 # uninitialized constant ActionMailer::LogSubscriber::BLACK
@@ -930,6 +936,9 @@
 # wrong constant name <static-init>
 # uninitialized constant ActiveRecord::AdvisoryLockBase(abstract)::ACTIONS
 # Did you mean?  ActiveRecord::AdvisoryLockBase::ACTIONS
+# wrong constant name <Class:ActiveRecord_AssociationRelation>
+# wrong constant name <Class:ActiveRecord_Associations_CollectionProxy>
+# wrong constant name <Class:ActiveRecord_Relation>
 # uninitialized constant ActiveRecord::AdvisoryLockBase(abstract)::CALLBACKS
 # Did you mean?  ActiveRecord::Callbacks
 #                ActiveRecord::AdvisoryLockBase::Callbacks
@@ -941,6 +950,7 @@
 # Did you mean?  ActiveRecord::AdvisoryLockBase::CALL_COMPILABLE_REGEXP
 # wrong constant name <Class:GeneratedAssociationMethods>
 # wrong constant name <Class:GeneratedAttributeMethods>
+# wrong constant name <Class:GeneratedRelationMethods>
 # uninitialized constant ActiveRecord::AdvisoryLockBase(abstract)::MAX_PASSWORD_LENGTH_ALLOWED
 # Did you mean?  ActiveRecord::AdvisoryLockBase::MAX_PASSWORD_LENGTH_ALLOWED
 # uninitialized constant ActiveRecord::AdvisoryLockBase(abstract)::NAME_COMPILABLE_REGEXP
@@ -949,9 +959,87 @@
 # Did you mean?  ActiveRecord::AdvisoryLockBase::RESTRICTED_CLASS_METHODS
 # uninitialized constant ActiveRecord::AdvisoryLockBase(abstract)::UNASSIGNABLE_KEYS
 # Did you mean?  ActiveRecord::AdvisoryLockBase::UNASSIGNABLE_KEYS
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation::CLAUSE_METHODS
+# Did you mean?  ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation::ClassMethods
+#                ActiveRecord::AdvisoryLockBase::ClassMethods
+#                ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation::VALUE_METHODS
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation::DEFAULT_VALUES
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation::Elem
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation::FROZEN_EMPTY_ARRAY
+# Did you mean?  ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation::FROZEN_EMPTY_HASH
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation::FROZEN_EMPTY_HASH
+# Did you mean?  ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation::FROZEN_EMPTY_ARRAY
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation::INVALID_METHODS_FOR_DELETE_ALL
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation::MULTI_VALUE_METHODS
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation::ONE_AS_ONE
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation::ORDER_IGNORE_MESSAGE
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation::SINGLE_VALUE_METHODS
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation::STRUCTURAL_OR_METHODS
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation::VALID_DIRECTIONS
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation::VALID_UNSCOPING_VALUES
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation::VALUE_METHODS
+# Did you mean?  ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation::CLAUSE_METHODS
+# wrong constant name <static-init>
+# uninitialized constant #<Class:0x00007ffeb6d7a4d0>::CLAUSE_METHODS
+# Did you mean?  ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy::ClassMethods
+#                ActiveRecord::AdvisoryLockBase::ClassMethods
+#                ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy::VALUE_METHODS
+#                ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy::CLAUSE_METHODS
+# uninitialized constant #<Class:0x00007ffeb6d7a4d0>::DEFAULT_VALUES
+# Did you mean?  ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy::DEFAULT_VALUES
+# uninitialized constant #<Class:0x00007ffeb6d7a4d0>::Elem
+# uninitialized constant #<Class:0x00007ffeb6d7a4d0>::FROZEN_EMPTY_ARRAY
+# Did you mean?  ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_HASH
+#                ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_ARRAY
+# uninitialized constant #<Class:0x00007ffeb6d7a4d0>::FROZEN_EMPTY_HASH
+# Did you mean?  ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_HASH
+#                ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_ARRAY
+# uninitialized constant #<Class:0x00007ffeb6d7a4d0>::INVALID_METHODS_FOR_DELETE_ALL
+# Did you mean?  ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy::INVALID_METHODS_FOR_DELETE_ALL
+# uninitialized constant #<Class:0x00007ffeb6d7a4d0>::MULTI_VALUE_METHODS
+# Did you mean?  ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy::MULTI_VALUE_METHODS
+# uninitialized constant #<Class:0x00007ffeb6d7a4d0>::ONE_AS_ONE
+# Did you mean?  ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy::ONE_AS_ONE
+# uninitialized constant #<Class:0x00007ffeb6d7a4d0>::ORDER_IGNORE_MESSAGE
+# Did you mean?  ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy::ORDER_IGNORE_MESSAGE
+# uninitialized constant #<Class:0x00007ffeb6d7a4d0>::SINGLE_VALUE_METHODS
+# Did you mean?  ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy::SINGLE_VALUE_METHODS
+# uninitialized constant #<Class:0x00007ffeb6d7a4d0>::STRUCTURAL_OR_METHODS
+# Did you mean?  ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy::STRUCTURAL_OR_METHODS
+# uninitialized constant #<Class:0x00007ffeb6d7a4d0>::VALID_DIRECTIONS
+# Did you mean?  ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy::VALID_DIRECTIONS
+# uninitialized constant #<Class:0x00007ffeb6d7a4d0>::VALID_UNSCOPING_VALUES
+# Did you mean?  ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy::VALID_UNSCOPING_VALUES
+# uninitialized constant #<Class:0x00007ffeb6d7a4d0>::VALUE_METHODS
+# Did you mean?  ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy::VALUE_METHODS
+#                ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy::CLAUSE_METHODS
+# wrong constant name <static-init>
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation::CLAUSE_METHODS
+# Did you mean?  ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation::ClassMethods
+#                ActiveRecord::AdvisoryLockBase::ClassMethods
+#                ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation::VALUE_METHODS
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation::DEFAULT_VALUES
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation::Elem
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation::FROZEN_EMPTY_ARRAY
+# Did you mean?  ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation::FROZEN_EMPTY_HASH
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation::FROZEN_EMPTY_HASH
+# Did you mean?  ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation::FROZEN_EMPTY_ARRAY
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation::INVALID_METHODS_FOR_DELETE_ALL
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation::MULTI_VALUE_METHODS
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation::ONE_AS_ONE
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation::ORDER_IGNORE_MESSAGE
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation::SINGLE_VALUE_METHODS
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation::STRUCTURAL_OR_METHODS
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation::VALID_DIRECTIONS
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation::VALID_UNSCOPING_VALUES
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation::VALUE_METHODS
+# Did you mean?  ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation::CLAUSE_METHODS
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name inherited
 # wrong constant name assert_valid_value
 # wrong constant name dump
 # wrong constant name initialize
@@ -1041,29 +1129,109 @@
 # wrong constant name rollback!
 # wrong constant name rolledback?
 # wrong constant name <static-init>
+# wrong constant name <Class:ConflictTypedEnumNameError>
+# wrong constant name <Class:MultipleEnumsDefinedError>
+# uninitialized constant ActiveRecord::Enum::RUBYGEMS_ACTIVATION_MONITOR
+# wrong constant name _define_enum
+# wrong constant name _define_typed_enum
+# wrong constant name extract_enum_values
+# wrong constant name gen_typed_enum_values
+# wrong constant name old_enum
+# wrong constant name typed_enum_reflections
+# wrong constant name <static-init>
+# wrong constant name <static-init>
 # wrong constant name collect?
-# uninitialized constant #<Class:0x00007fb570bbc0d8>::ACTIONS
+# uninitialized constant #<Class:0x00007ffeb6d826a8>::ACTIONS
 # Did you mean?  ActiveRecord::InternalMetadata::ACTIONS
-# uninitialized constant #<Class:0x00007fb570bbc0d8>::CALLBACKS
+# uninitialized constant #<Class:0x00007ffeb6d826a8>::CALLBACKS
 # Did you mean?  ActiveRecord::Callbacks
 #                ActiveRecord::InternalMetadata::Callbacks
 #                ActiveRecord::InternalMetadata::Callback
 #                ActiveRecord::InternalMetadata::CALLBACKS
-# uninitialized constant #<Class:0x00007fb570bbc0d8>::CALLBACK_FILTER_TYPES
+# uninitialized constant #<Class:0x00007ffeb6d826a8>::CALLBACK_FILTER_TYPES
 # Did you mean?  ActiveRecord::InternalMetadata::CALLBACK_FILTER_TYPES
-# uninitialized constant #<Class:0x00007fb570bbc0d8>::CALL_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007ffeb6d826a8>::CALL_COMPILABLE_REGEXP
 # Did you mean?  ActiveRecord::InternalMetadata::CALL_COMPILABLE_REGEXP
 # wrong constant name <Class:GeneratedAssociationMethods>
-# wrong constant name <Class:GeneratedAttributeMethods>
-# uninitialized constant #<Class:0x00007fb570bbc0d8>::MAX_PASSWORD_LENGTH_ALLOWED
+# wrong constant name <Class:GeneratedRelationMethods>
+# uninitialized constant #<Class:0x00007ffeb6d826a8>::MAX_PASSWORD_LENGTH_ALLOWED
 # Did you mean?  ActiveRecord::InternalMetadata::MAX_PASSWORD_LENGTH_ALLOWED
-# uninitialized constant #<Class:0x00007fb570bbc0d8>::NAME_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007ffeb6d826a8>::NAME_COMPILABLE_REGEXP
 # Did you mean?  ActiveRecord::InternalMetadata::NAME_COMPILABLE_REGEXP
-# uninitialized constant #<Class:0x00007fb570bbc0d8>::RESTRICTED_CLASS_METHODS
+# uninitialized constant #<Class:0x00007ffeb6d826a8>::RESTRICTED_CLASS_METHODS
 # Did you mean?  ActiveRecord::InternalMetadata::RESTRICTED_CLASS_METHODS
-# uninitialized constant #<Class:0x00007fb570bbc0d8>::UNASSIGNABLE_KEYS
+# uninitialized constant #<Class:0x00007ffeb6d826a8>::UNASSIGNABLE_KEYS
 # Did you mean?  ActiveRecord::InternalMetadata::UNASSIGNABLE_KEYS
-# wrong constant name <static-init>
+# uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation::CLAUSE_METHODS
+# Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation::ClassMethods
+#                ActiveRecord::InternalMetadata::ClassMethods
+#                ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation::VALUE_METHODS
+# uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation::DEFAULT_VALUES
+# uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation::FROZEN_EMPTY_ARRAY
+# Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation::FROZEN_EMPTY_HASH
+# uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation::FROZEN_EMPTY_HASH
+# Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation::FROZEN_EMPTY_ARRAY
+# uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation::INVALID_METHODS_FOR_DELETE_ALL
+# uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation::MULTI_VALUE_METHODS
+# uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation::ONE_AS_ONE
+# uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation::ORDER_IGNORE_MESSAGE
+# uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation::SINGLE_VALUE_METHODS
+# uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation::STRUCTURAL_OR_METHODS
+# uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation::VALID_DIRECTIONS
+# uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation::VALID_UNSCOPING_VALUES
+# uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation::VALUE_METHODS
+# Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation::CLAUSE_METHODS
+# uninitialized constant #<Class:0x00007ffeb6d80ee8>::CLAUSE_METHODS
+# Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::ClassMethods
+#                ActiveRecord::InternalMetadata::ClassMethods
+#                ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::VALUE_METHODS
+#                ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::CLAUSE_METHODS
+# uninitialized constant #<Class:0x00007ffeb6d80ee8>::DEFAULT_VALUES
+# Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::DEFAULT_VALUES
+# uninitialized constant #<Class:0x00007ffeb6d80ee8>::FROZEN_EMPTY_ARRAY
+# Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_HASH
+#                ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_ARRAY
+# uninitialized constant #<Class:0x00007ffeb6d80ee8>::FROZEN_EMPTY_HASH
+# Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_HASH
+#                ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_ARRAY
+# uninitialized constant #<Class:0x00007ffeb6d80ee8>::INVALID_METHODS_FOR_DELETE_ALL
+# Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::INVALID_METHODS_FOR_DELETE_ALL
+# uninitialized constant #<Class:0x00007ffeb6d80ee8>::MULTI_VALUE_METHODS
+# Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::MULTI_VALUE_METHODS
+# uninitialized constant #<Class:0x00007ffeb6d80ee8>::ONE_AS_ONE
+# Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::ONE_AS_ONE
+# uninitialized constant #<Class:0x00007ffeb6d80ee8>::ORDER_IGNORE_MESSAGE
+# Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::ORDER_IGNORE_MESSAGE
+# uninitialized constant #<Class:0x00007ffeb6d80ee8>::SINGLE_VALUE_METHODS
+# Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::SINGLE_VALUE_METHODS
+# uninitialized constant #<Class:0x00007ffeb6d80ee8>::STRUCTURAL_OR_METHODS
+# Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::STRUCTURAL_OR_METHODS
+# uninitialized constant #<Class:0x00007ffeb6d80ee8>::VALID_DIRECTIONS
+# Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::VALID_DIRECTIONS
+# uninitialized constant #<Class:0x00007ffeb6d80ee8>::VALID_UNSCOPING_VALUES
+# Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::VALID_UNSCOPING_VALUES
+# uninitialized constant #<Class:0x00007ffeb6d80ee8>::VALUE_METHODS
+# Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::VALUE_METHODS
+#                ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::CLAUSE_METHODS
+# uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_Relation::CLAUSE_METHODS
+# Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Relation::ClassMethods
+#                ActiveRecord::InternalMetadata::ClassMethods
+#                ActiveRecord::InternalMetadata::ActiveRecord_Relation::VALUE_METHODS
+# uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_Relation::DEFAULT_VALUES
+# uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_Relation::FROZEN_EMPTY_ARRAY
+# Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Relation::FROZEN_EMPTY_HASH
+# uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_Relation::FROZEN_EMPTY_HASH
+# Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Relation::FROZEN_EMPTY_ARRAY
+# uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_Relation::INVALID_METHODS_FOR_DELETE_ALL
+# uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_Relation::MULTI_VALUE_METHODS
+# uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_Relation::ONE_AS_ONE
+# uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_Relation::ORDER_IGNORE_MESSAGE
+# uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_Relation::SINGLE_VALUE_METHODS
+# uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_Relation::STRUCTURAL_OR_METHODS
+# uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_Relation::VALID_DIRECTIONS
+# uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_Relation::VALID_UNSCOPING_VALUES
+# uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_Relation::VALUE_METHODS
+# Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Relation::CLAUSE_METHODS
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name []
@@ -1291,7 +1459,7 @@
 # uninitialized constant ActiveRecord::SchemaMigration(version: string)::CALL_COMPILABLE_REGEXP
 # Did you mean?  ActiveRecord::SchemaMigration::CALL_COMPILABLE_REGEXP
 # wrong constant name <Class:GeneratedAssociationMethods>
-# wrong constant name <Class:GeneratedAttributeMethods>
+# wrong constant name <Class:GeneratedRelationMethods>
 # uninitialized constant ActiveRecord::SchemaMigration(version: string)::MAX_PASSWORD_LENGTH_ALLOWED
 # Did you mean?  ActiveRecord::SchemaMigration::MAX_PASSWORD_LENGTH_ALLOWED
 # uninitialized constant ActiveRecord::SchemaMigration(version: string)::NAME_COMPILABLE_REGEXP
@@ -1301,7 +1469,76 @@
 # uninitialized constant ActiveRecord::SchemaMigration(version: string)::UNASSIGNABLE_KEYS
 # Did you mean?  ActiveRecord::SchemaMigration::UNASSIGNABLE_KEYS
 # wrong constant name version
-# wrong constant name <static-init>
+# uninitialized constant ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation::CLAUSE_METHODS
+# Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation::ClassMethods
+#                ActiveRecord::SchemaMigration::ClassMethods
+#                ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation::VALUE_METHODS
+# uninitialized constant ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation::DEFAULT_VALUES
+# uninitialized constant ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation::FROZEN_EMPTY_ARRAY
+# Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation::FROZEN_EMPTY_HASH
+# uninitialized constant ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation::FROZEN_EMPTY_HASH
+# Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation::FROZEN_EMPTY_ARRAY
+# uninitialized constant ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation::INVALID_METHODS_FOR_DELETE_ALL
+# uninitialized constant ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation::MULTI_VALUE_METHODS
+# uninitialized constant ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation::ONE_AS_ONE
+# uninitialized constant ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation::ORDER_IGNORE_MESSAGE
+# uninitialized constant ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation::SINGLE_VALUE_METHODS
+# uninitialized constant ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation::STRUCTURAL_OR_METHODS
+# uninitialized constant ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation::VALID_DIRECTIONS
+# uninitialized constant ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation::VALID_UNSCOPING_VALUES
+# uninitialized constant ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation::VALUE_METHODS
+# Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation::CLAUSE_METHODS
+# uninitialized constant #<Class:0x00007ffeb6da3970>::CLAUSE_METHODS
+# Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::ClassMethods
+#                ActiveRecord::SchemaMigration::ClassMethods
+#                ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::VALUE_METHODS
+#                ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::CLAUSE_METHODS
+# uninitialized constant #<Class:0x00007ffeb6da3970>::DEFAULT_VALUES
+# Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::DEFAULT_VALUES
+# uninitialized constant #<Class:0x00007ffeb6da3970>::FROZEN_EMPTY_ARRAY
+# Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_HASH
+#                ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_ARRAY
+# uninitialized constant #<Class:0x00007ffeb6da3970>::FROZEN_EMPTY_HASH
+# Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_HASH
+#                ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_ARRAY
+# uninitialized constant #<Class:0x00007ffeb6da3970>::INVALID_METHODS_FOR_DELETE_ALL
+# Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::INVALID_METHODS_FOR_DELETE_ALL
+# uninitialized constant #<Class:0x00007ffeb6da3970>::MULTI_VALUE_METHODS
+# Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::MULTI_VALUE_METHODS
+# uninitialized constant #<Class:0x00007ffeb6da3970>::ONE_AS_ONE
+# Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::ONE_AS_ONE
+# uninitialized constant #<Class:0x00007ffeb6da3970>::ORDER_IGNORE_MESSAGE
+# Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::ORDER_IGNORE_MESSAGE
+# uninitialized constant #<Class:0x00007ffeb6da3970>::SINGLE_VALUE_METHODS
+# Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::SINGLE_VALUE_METHODS
+# uninitialized constant #<Class:0x00007ffeb6da3970>::STRUCTURAL_OR_METHODS
+# Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::STRUCTURAL_OR_METHODS
+# uninitialized constant #<Class:0x00007ffeb6da3970>::VALID_DIRECTIONS
+# Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::VALID_DIRECTIONS
+# uninitialized constant #<Class:0x00007ffeb6da3970>::VALID_UNSCOPING_VALUES
+# Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::VALID_UNSCOPING_VALUES
+# uninitialized constant #<Class:0x00007ffeb6da3970>::VALUE_METHODS
+# Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::VALUE_METHODS
+#                ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::CLAUSE_METHODS
+# uninitialized constant ActiveRecord::SchemaMigration::ActiveRecord_Relation::CLAUSE_METHODS
+# Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Relation::ClassMethods
+#                ActiveRecord::SchemaMigration::ClassMethods
+#                ActiveRecord::SchemaMigration::ActiveRecord_Relation::VALUE_METHODS
+# uninitialized constant ActiveRecord::SchemaMigration::ActiveRecord_Relation::DEFAULT_VALUES
+# uninitialized constant ActiveRecord::SchemaMigration::ActiveRecord_Relation::FROZEN_EMPTY_ARRAY
+# Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Relation::FROZEN_EMPTY_HASH
+# uninitialized constant ActiveRecord::SchemaMigration::ActiveRecord_Relation::FROZEN_EMPTY_HASH
+# Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Relation::FROZEN_EMPTY_ARRAY
+# uninitialized constant ActiveRecord::SchemaMigration::ActiveRecord_Relation::INVALID_METHODS_FOR_DELETE_ALL
+# uninitialized constant ActiveRecord::SchemaMigration::ActiveRecord_Relation::MULTI_VALUE_METHODS
+# uninitialized constant ActiveRecord::SchemaMigration::ActiveRecord_Relation::ONE_AS_ONE
+# uninitialized constant ActiveRecord::SchemaMigration::ActiveRecord_Relation::ORDER_IGNORE_MESSAGE
+# uninitialized constant ActiveRecord::SchemaMigration::ActiveRecord_Relation::SINGLE_VALUE_METHODS
+# uninitialized constant ActiveRecord::SchemaMigration::ActiveRecord_Relation::STRUCTURAL_OR_METHODS
+# uninitialized constant ActiveRecord::SchemaMigration::ActiveRecord_Relation::VALID_DIRECTIONS
+# uninitialized constant ActiveRecord::SchemaMigration::ActiveRecord_Relation::VALID_UNSCOPING_VALUES
+# uninitialized constant ActiveRecord::SchemaMigration::ActiveRecord_Relation::VALUE_METHODS
+# Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Relation::CLAUSE_METHODS
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name all_versions
@@ -1463,6 +1700,11 @@
 # wrong constant name uses_transaction?
 # wrong constant name <static-init>
 # wrong constant name <static-init>
+# wrong constant name enum_calls
+# wrong constant name get_enum_call
+# wrong constant name store_enum_call
+# wrong constant name <static-init>
+# wrong constant name instance
 # uninitialized constant ActiveStorage::LogSubscriber::BLACK
 # uninitialized constant ActiveStorage::LogSubscriber::BLUE
 # uninitialized constant ActiveStorage::LogSubscriber::BOLD
@@ -1513,6 +1755,9 @@
 # wrong constant name connect_internal
 # uninitialized constant ApplicationRecord(abstract)::ACTIONS
 # Did you mean?  ApplicationRecord::ACTIONS
+# wrong constant name <Class:ActiveRecord_AssociationRelation>
+# wrong constant name <Class:ActiveRecord_Associations_CollectionProxy>
+# wrong constant name <Class:ActiveRecord_Relation>
 # uninitialized constant ApplicationRecord(abstract)::CALLBACKS
 # Did you mean?  ApplicationRecord::Callbacks
 #                ApplicationRecord::Callback
@@ -1523,6 +1768,7 @@
 # Did you mean?  ApplicationRecord::CALL_COMPILABLE_REGEXP
 # wrong constant name <Class:GeneratedAssociationMethods>
 # wrong constant name <Class:GeneratedAttributeMethods>
+# wrong constant name <Class:GeneratedRelationMethods>
 # uninitialized constant ApplicationRecord(abstract)::MAX_PASSWORD_LENGTH_ALLOWED
 # Did you mean?  ApplicationRecord::MAX_PASSWORD_LENGTH_ALLOWED
 # uninitialized constant ApplicationRecord(abstract)::NAME_COMPILABLE_REGEXP
@@ -1531,6 +1777,70 @@
 # Did you mean?  ApplicationRecord::RESTRICTED_CLASS_METHODS
 # uninitialized constant ApplicationRecord(abstract)::UNASSIGNABLE_KEYS
 # Did you mean?  ApplicationRecord::UNASSIGNABLE_KEYS
+# uninitialized constant ApplicationRecord::ActiveRecord_AssociationRelation::CLAUSE_METHODS
+# Did you mean?  ApplicationRecord::ActiveRecord_AssociationRelation::ClassMethods
+#                ApplicationRecord::ClassMethods
+#                ApplicationRecord::ActiveRecord_AssociationRelation::VALUE_METHODS
+# uninitialized constant ApplicationRecord::ActiveRecord_AssociationRelation::DEFAULT_VALUES
+# uninitialized constant ApplicationRecord::ActiveRecord_AssociationRelation::Elem
+# uninitialized constant ApplicationRecord::ActiveRecord_AssociationRelation::FROZEN_EMPTY_ARRAY
+# Did you mean?  ApplicationRecord::ActiveRecord_AssociationRelation::FROZEN_EMPTY_HASH
+# uninitialized constant ApplicationRecord::ActiveRecord_AssociationRelation::FROZEN_EMPTY_HASH
+# Did you mean?  ApplicationRecord::ActiveRecord_AssociationRelation::FROZEN_EMPTY_ARRAY
+# uninitialized constant ApplicationRecord::ActiveRecord_AssociationRelation::INVALID_METHODS_FOR_DELETE_ALL
+# uninitialized constant ApplicationRecord::ActiveRecord_AssociationRelation::MULTI_VALUE_METHODS
+# uninitialized constant ApplicationRecord::ActiveRecord_AssociationRelation::ONE_AS_ONE
+# uninitialized constant ApplicationRecord::ActiveRecord_AssociationRelation::ORDER_IGNORE_MESSAGE
+# uninitialized constant ApplicationRecord::ActiveRecord_AssociationRelation::SINGLE_VALUE_METHODS
+# uninitialized constant ApplicationRecord::ActiveRecord_AssociationRelation::STRUCTURAL_OR_METHODS
+# uninitialized constant ApplicationRecord::ActiveRecord_AssociationRelation::VALID_DIRECTIONS
+# uninitialized constant ApplicationRecord::ActiveRecord_AssociationRelation::VALID_UNSCOPING_VALUES
+# uninitialized constant ApplicationRecord::ActiveRecord_AssociationRelation::VALUE_METHODS
+# Did you mean?  ApplicationRecord::ActiveRecord_AssociationRelation::CLAUSE_METHODS
+# wrong constant name <static-init>
+# uninitialized constant ApplicationRecord::ActiveRecord_Associations_CollectionProxy::CLAUSE_METHODS
+# Did you mean?  ApplicationRecord::ActiveRecord_Associations_CollectionProxy::ClassMethods
+#                ApplicationRecord::ClassMethods
+#                ApplicationRecord::ActiveRecord_Associations_CollectionProxy::VALUE_METHODS
+# uninitialized constant ApplicationRecord::ActiveRecord_Associations_CollectionProxy::DEFAULT_VALUES
+# uninitialized constant ApplicationRecord::ActiveRecord_Associations_CollectionProxy::Elem
+# uninitialized constant ApplicationRecord::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_ARRAY
+# Did you mean?  ApplicationRecord::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_HASH
+# uninitialized constant ApplicationRecord::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_HASH
+# Did you mean?  ApplicationRecord::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_ARRAY
+# uninitialized constant ApplicationRecord::ActiveRecord_Associations_CollectionProxy::INVALID_METHODS_FOR_DELETE_ALL
+# uninitialized constant ApplicationRecord::ActiveRecord_Associations_CollectionProxy::MULTI_VALUE_METHODS
+# uninitialized constant ApplicationRecord::ActiveRecord_Associations_CollectionProxy::ONE_AS_ONE
+# uninitialized constant ApplicationRecord::ActiveRecord_Associations_CollectionProxy::ORDER_IGNORE_MESSAGE
+# uninitialized constant ApplicationRecord::ActiveRecord_Associations_CollectionProxy::SINGLE_VALUE_METHODS
+# uninitialized constant ApplicationRecord::ActiveRecord_Associations_CollectionProxy::STRUCTURAL_OR_METHODS
+# uninitialized constant ApplicationRecord::ActiveRecord_Associations_CollectionProxy::VALID_DIRECTIONS
+# uninitialized constant ApplicationRecord::ActiveRecord_Associations_CollectionProxy::VALID_UNSCOPING_VALUES
+# uninitialized constant ApplicationRecord::ActiveRecord_Associations_CollectionProxy::VALUE_METHODS
+# Did you mean?  ApplicationRecord::ActiveRecord_Associations_CollectionProxy::CLAUSE_METHODS
+# wrong constant name <static-init>
+# uninitialized constant ApplicationRecord::ActiveRecord_Relation::CLAUSE_METHODS
+# Did you mean?  ApplicationRecord::ActiveRecord_Relation::ClassMethods
+#                ApplicationRecord::ClassMethods
+#                ApplicationRecord::ActiveRecord_Relation::VALUE_METHODS
+# uninitialized constant ApplicationRecord::ActiveRecord_Relation::DEFAULT_VALUES
+# uninitialized constant ApplicationRecord::ActiveRecord_Relation::Elem
+# uninitialized constant ApplicationRecord::ActiveRecord_Relation::FROZEN_EMPTY_ARRAY
+# Did you mean?  ApplicationRecord::ActiveRecord_Relation::FROZEN_EMPTY_HASH
+# uninitialized constant ApplicationRecord::ActiveRecord_Relation::FROZEN_EMPTY_HASH
+# Did you mean?  ApplicationRecord::ActiveRecord_Relation::FROZEN_EMPTY_ARRAY
+# uninitialized constant ApplicationRecord::ActiveRecord_Relation::INVALID_METHODS_FOR_DELETE_ALL
+# uninitialized constant ApplicationRecord::ActiveRecord_Relation::MULTI_VALUE_METHODS
+# uninitialized constant ApplicationRecord::ActiveRecord_Relation::ONE_AS_ONE
+# uninitialized constant ApplicationRecord::ActiveRecord_Relation::ORDER_IGNORE_MESSAGE
+# uninitialized constant ApplicationRecord::ActiveRecord_Relation::SINGLE_VALUE_METHODS
+# uninitialized constant ApplicationRecord::ActiveRecord_Relation::STRUCTURAL_OR_METHODS
+# uninitialized constant ApplicationRecord::ActiveRecord_Relation::VALID_DIRECTIONS
+# uninitialized constant ApplicationRecord::ActiveRecord_Relation::VALID_UNSCOPING_VALUES
+# uninitialized constant ApplicationRecord::ActiveRecord_Relation::VALUE_METHODS
+# Did you mean?  ApplicationRecord::ActiveRecord_Relation::CLAUSE_METHODS
+# wrong constant name <static-init>
+# wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name shelljoin
@@ -1555,6 +1865,7 @@
 #                BigDecimal::EXABYTE
 # wrong constant name clone
 # wrong constant name to_digits
+# wrong constant name interpret_loosely
 # wrong constant name new
 # wrong constant name clone
 # wrong constant name irb
@@ -3310,6 +3621,19 @@
 # uninitialized constant CodeRay::Scanners::Scanner::Id
 # uninitialized constant CodeRay::Scanners::Scanner::Version
 # Did you mean?  CodeRay::VERSION
+# uninitialized constant Complex::EXABYTE
+# Did you mean?  Complex::TERABYTE
+#                Complex::MEGABYTE
+# uninitialized constant Complex::GIGABYTE
+# uninitialized constant Complex::KILOBYTE
+# uninitialized constant Complex::MEGABYTE
+# Did you mean?  Complex::EXABYTE
+# uninitialized constant Complex::PETABYTE
+# Did you mean?  Complex::TERABYTE
+# uninitialized constant Complex::TERABYTE
+# Did you mean?  Complex::PETABYTE
+#                Complex::EXABYTE
+# wrong constant name to_d
 # uninitialized constant Concurrent::AbstractExecutorService::DEBUG
 # uninitialized constant Concurrent::AbstractExecutorService::ERROR
 # Did you mean?  Concurrent::Error
@@ -3343,25 +3667,24 @@
 # uninitialized constant Configatron
 # uninitialized constant Continuation
 # uninitialized constant Continuation
-# uninitialized constant #<Class:0x00007fb56c8ac4a0>::ACTIONS
+# uninitialized constant #<Class:0x00007ffebad92108>::ACTIONS
 # Did you mean?  Course::ACTIONS
-# uninitialized constant #<Class:0x00007fb56c8ac4a0>::CALLBACKS
+# uninitialized constant #<Class:0x00007ffebad92108>::CALLBACKS
 # Did you mean?  Course::Callbacks
 #                Course::Callback
 #                Course::CALLBACKS
-# uninitialized constant #<Class:0x00007fb56c8ac4a0>::CALLBACK_FILTER_TYPES
+# uninitialized constant #<Class:0x00007ffebad92108>::CALLBACK_FILTER_TYPES
 # Did you mean?  Course::CALLBACK_FILTER_TYPES
-# uninitialized constant #<Class:0x00007fb56c8ac4a0>::CALL_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007ffebad92108>::CALL_COMPILABLE_REGEXP
 # Did you mean?  Course::CALL_COMPILABLE_REGEXP
-# wrong constant name <Class:GeneratedAssociationMethods>
-# wrong constant name <Class:GeneratedAttributeMethods>
-# uninitialized constant #<Class:0x00007fb56c8ac4a0>::MAX_PASSWORD_LENGTH_ALLOWED
+# wrong constant name <Class:GeneratedRelationMethods>
+# uninitialized constant #<Class:0x00007ffebad92108>::MAX_PASSWORD_LENGTH_ALLOWED
 # Did you mean?  Course::MAX_PASSWORD_LENGTH_ALLOWED
-# uninitialized constant #<Class:0x00007fb56c8ac4a0>::NAME_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007ffebad92108>::NAME_COMPILABLE_REGEXP
 # Did you mean?  Course::NAME_COMPILABLE_REGEXP
-# uninitialized constant #<Class:0x00007fb56c8ac4a0>::RESTRICTED_CLASS_METHODS
+# uninitialized constant #<Class:0x00007ffebad92108>::RESTRICTED_CLASS_METHODS
 # Did you mean?  Course::RESTRICTED_CLASS_METHODS
-# uninitialized constant #<Class:0x00007fb56c8ac4a0>::UNASSIGNABLE_KEYS
+# uninitialized constant #<Class:0x00007ffebad92108>::UNASSIGNABLE_KEYS
 # Did you mean?  Course::UNASSIGNABLE_KEYS
 # wrong constant name after_add_for_tees
 # wrong constant name after_add_for_tees=
@@ -3377,11 +3700,64 @@
 # wrong constant name before_remove_for_tees=
 # wrong constant name before_remove_for_tees?
 # wrong constant name validate_associated_records_for_tees
-# wrong constant name tee_ids
+# uninitialized constant Course::ActiveRecord_AssociationRelation::CLAUSE_METHODS
+# Did you mean?  Course::ActiveRecord_AssociationRelation::ClassMethods
+#                Course::ClassMethods
+#                Course::ActiveRecord_AssociationRelation::VALUE_METHODS
+# uninitialized constant Course::ActiveRecord_AssociationRelation::DEFAULT_VALUES
+# uninitialized constant Course::ActiveRecord_AssociationRelation::FROZEN_EMPTY_ARRAY
+# Did you mean?  Course::ActiveRecord_AssociationRelation::FROZEN_EMPTY_HASH
+# uninitialized constant Course::ActiveRecord_AssociationRelation::FROZEN_EMPTY_HASH
+# Did you mean?  Course::ActiveRecord_AssociationRelation::FROZEN_EMPTY_ARRAY
+# uninitialized constant Course::ActiveRecord_AssociationRelation::INVALID_METHODS_FOR_DELETE_ALL
+# uninitialized constant Course::ActiveRecord_AssociationRelation::MULTI_VALUE_METHODS
+# uninitialized constant Course::ActiveRecord_AssociationRelation::ONE_AS_ONE
+# uninitialized constant Course::ActiveRecord_AssociationRelation::ORDER_IGNORE_MESSAGE
+# uninitialized constant Course::ActiveRecord_AssociationRelation::SINGLE_VALUE_METHODS
+# uninitialized constant Course::ActiveRecord_AssociationRelation::STRUCTURAL_OR_METHODS
+# uninitialized constant Course::ActiveRecord_AssociationRelation::VALID_DIRECTIONS
+# uninitialized constant Course::ActiveRecord_AssociationRelation::VALID_UNSCOPING_VALUES
+# uninitialized constant Course::ActiveRecord_AssociationRelation::VALUE_METHODS
+# Did you mean?  Course::ActiveRecord_AssociationRelation::CLAUSE_METHODS
+# uninitialized constant Course::ActiveRecord_Associations_CollectionProxy::CLAUSE_METHODS
+# Did you mean?  Course::ActiveRecord_Associations_CollectionProxy::ClassMethods
+#                Course::ClassMethods
+#                Course::ActiveRecord_Associations_CollectionProxy::VALUE_METHODS
+# uninitialized constant Course::ActiveRecord_Associations_CollectionProxy::DEFAULT_VALUES
+# uninitialized constant Course::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_ARRAY
+# Did you mean?  Course::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_HASH
+# uninitialized constant Course::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_HASH
+# Did you mean?  Course::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_ARRAY
+# uninitialized constant Course::ActiveRecord_Associations_CollectionProxy::INVALID_METHODS_FOR_DELETE_ALL
+# uninitialized constant Course::ActiveRecord_Associations_CollectionProxy::MULTI_VALUE_METHODS
+# uninitialized constant Course::ActiveRecord_Associations_CollectionProxy::ONE_AS_ONE
+# uninitialized constant Course::ActiveRecord_Associations_CollectionProxy::ORDER_IGNORE_MESSAGE
+# uninitialized constant Course::ActiveRecord_Associations_CollectionProxy::SINGLE_VALUE_METHODS
+# uninitialized constant Course::ActiveRecord_Associations_CollectionProxy::STRUCTURAL_OR_METHODS
+# uninitialized constant Course::ActiveRecord_Associations_CollectionProxy::VALID_DIRECTIONS
+# uninitialized constant Course::ActiveRecord_Associations_CollectionProxy::VALID_UNSCOPING_VALUES
+# uninitialized constant Course::ActiveRecord_Associations_CollectionProxy::VALUE_METHODS
+# Did you mean?  Course::ActiveRecord_Associations_CollectionProxy::CLAUSE_METHODS
+# uninitialized constant Course::ActiveRecord_Relation::CLAUSE_METHODS
+# Did you mean?  Course::ActiveRecord_Relation::ClassMethods
+#                Course::ClassMethods
+#                Course::ActiveRecord_Relation::VALUE_METHODS
+# uninitialized constant Course::ActiveRecord_Relation::DEFAULT_VALUES
+# uninitialized constant Course::ActiveRecord_Relation::FROZEN_EMPTY_ARRAY
+# Did you mean?  Course::ActiveRecord_Relation::FROZEN_EMPTY_HASH
+# uninitialized constant Course::ActiveRecord_Relation::FROZEN_EMPTY_HASH
+# Did you mean?  Course::ActiveRecord_Relation::FROZEN_EMPTY_ARRAY
+# uninitialized constant Course::ActiveRecord_Relation::INVALID_METHODS_FOR_DELETE_ALL
+# uninitialized constant Course::ActiveRecord_Relation::MULTI_VALUE_METHODS
+# uninitialized constant Course::ActiveRecord_Relation::ONE_AS_ONE
+# uninitialized constant Course::ActiveRecord_Relation::ORDER_IGNORE_MESSAGE
+# uninitialized constant Course::ActiveRecord_Relation::SINGLE_VALUE_METHODS
+# uninitialized constant Course::ActiveRecord_Relation::STRUCTURAL_OR_METHODS
+# uninitialized constant Course::ActiveRecord_Relation::VALID_DIRECTIONS
+# uninitialized constant Course::ActiveRecord_Relation::VALID_UNSCOPING_VALUES
+# uninitialized constant Course::ActiveRecord_Relation::VALUE_METHODS
+# Did you mean?  Course::ActiveRecord_Relation::CLAUSE_METHODS
 # wrong constant name tee_ids=
-# wrong constant name tees
-# wrong constant name tees=
-# wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name after_add_for_tees
 # wrong constant name after_add_for_tees=
@@ -3471,12 +3847,7 @@
 # wrong constant name mutex
 # uninitialized constant Date::DAYS_INTO_WEEK
 # uninitialized constant Date::WEEKEND_DAYS
-# uninitialized constant Date::Error
-# Did you mean?  IOError
-#                Errno
-# uninitialized constant Date::Error
-# Did you mean?  IOError
-#                Errno
+# wrong constant name infinite?
 # uninitialized constant Date::Infinity::EXABYTE
 # Did you mean?  Date::Infinity::TERABYTE
 #                Date::Infinity::MEGABYTE
@@ -4032,6 +4403,23 @@
 # uninitialized constant Gem::UriParsing
 # wrong constant name default_gems_use_full_paths?
 # wrong constant name remove_unresolved_default_spec
+# wrong constant name _routes
+# wrong constant name rails_info_path
+# wrong constant name rails_info_properties_path
+# wrong constant name rails_info_properties_url
+# wrong constant name rails_info_routes_path
+# wrong constant name rails_info_routes_url
+# wrong constant name rails_info_url
+# wrong constant name rails_mailers_path
+# wrong constant name rails_mailers_url
+# wrong constant name _routes
+# wrong constant name full_url_for
+# wrong constant name optimize_routes_generation?
+# wrong constant name polymorphic_path
+# wrong constant name polymorphic_url
+# wrong constant name route_for
+# wrong constant name url_for
+# wrong constant name url_options
 # uninitialized constant GetText::PoParser::Racc_Main_Parsing_Routine
 # uninitialized constant GetText::PoParser::Racc_Runtime_Core_Id_C
 # Did you mean?  GetText::PoParser::Racc_Runtime_Core_Version_C
@@ -4112,34 +4500,84 @@
 # wrong constant name use
 # uninitialized constant Guard::Guardfile::Evaluator::EVALUATE_GUARDFILE
 # uninitialized constant Guard::Guardfile::Evaluator::REEVALUATE_GUARDFILE
-# uninitialized constant #<Class:0x00007fb563225ce8>::ACTIONS
+# uninitialized constant #<Class:0x00007ffebad7b430>::ACTIONS
 # Did you mean?  Hole::ACTIONS
-# uninitialized constant #<Class:0x00007fb563225ce8>::CALLBACKS
+# uninitialized constant #<Class:0x00007ffebad7b430>::CALLBACKS
 # Did you mean?  Hole::Callbacks
 #                Hole::Callback
 #                Hole::CALLBACKS
-# uninitialized constant #<Class:0x00007fb563225ce8>::CALLBACK_FILTER_TYPES
+# uninitialized constant #<Class:0x00007ffebad7b430>::CALLBACK_FILTER_TYPES
 # Did you mean?  Hole::CALLBACK_FILTER_TYPES
-# uninitialized constant #<Class:0x00007fb563225ce8>::CALL_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007ffebad7b430>::CALL_COMPILABLE_REGEXP
 # Did you mean?  Hole::CALL_COMPILABLE_REGEXP
-# wrong constant name <Class:GeneratedAssociationMethods>
-# wrong constant name <Class:GeneratedAttributeMethods>
-# uninitialized constant #<Class:0x00007fb563225ce8>::MAX_PASSWORD_LENGTH_ALLOWED
+# wrong constant name <Class:GeneratedRelationMethods>
+# uninitialized constant #<Class:0x00007ffebad7b430>::MAX_PASSWORD_LENGTH_ALLOWED
 # Did you mean?  Hole::MAX_PASSWORD_LENGTH_ALLOWED
-# uninitialized constant #<Class:0x00007fb563225ce8>::NAME_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007ffebad7b430>::NAME_COMPILABLE_REGEXP
 # Did you mean?  Hole::NAME_COMPILABLE_REGEXP
-# uninitialized constant #<Class:0x00007fb563225ce8>::RESTRICTED_CLASS_METHODS
+# uninitialized constant #<Class:0x00007ffebad7b430>::RESTRICTED_CLASS_METHODS
 # Did you mean?  Hole::RESTRICTED_CLASS_METHODS
-# uninitialized constant #<Class:0x00007fb563225ce8>::UNASSIGNABLE_KEYS
+# uninitialized constant #<Class:0x00007ffebad7b430>::UNASSIGNABLE_KEYS
 # Did you mean?  Hole::UNASSIGNABLE_KEYS
 # wrong constant name autosave_associated_records_for_tee
-# wrong constant name build_tee
-# wrong constant name create_tee
-# wrong constant name create_tee!
+# uninitialized constant Hole::ActiveRecord_AssociationRelation::CLAUSE_METHODS
+# Did you mean?  Hole::ActiveRecord_AssociationRelation::ClassMethods
+#                Hole::ClassMethods
+#                Hole::ActiveRecord_AssociationRelation::VALUE_METHODS
+# uninitialized constant Hole::ActiveRecord_AssociationRelation::DEFAULT_VALUES
+# uninitialized constant Hole::ActiveRecord_AssociationRelation::FROZEN_EMPTY_ARRAY
+# Did you mean?  Hole::ActiveRecord_AssociationRelation::FROZEN_EMPTY_HASH
+# uninitialized constant Hole::ActiveRecord_AssociationRelation::FROZEN_EMPTY_HASH
+# Did you mean?  Hole::ActiveRecord_AssociationRelation::FROZEN_EMPTY_ARRAY
+# uninitialized constant Hole::ActiveRecord_AssociationRelation::INVALID_METHODS_FOR_DELETE_ALL
+# uninitialized constant Hole::ActiveRecord_AssociationRelation::MULTI_VALUE_METHODS
+# uninitialized constant Hole::ActiveRecord_AssociationRelation::ONE_AS_ONE
+# uninitialized constant Hole::ActiveRecord_AssociationRelation::ORDER_IGNORE_MESSAGE
+# uninitialized constant Hole::ActiveRecord_AssociationRelation::SINGLE_VALUE_METHODS
+# uninitialized constant Hole::ActiveRecord_AssociationRelation::STRUCTURAL_OR_METHODS
+# uninitialized constant Hole::ActiveRecord_AssociationRelation::VALID_DIRECTIONS
+# uninitialized constant Hole::ActiveRecord_AssociationRelation::VALID_UNSCOPING_VALUES
+# uninitialized constant Hole::ActiveRecord_AssociationRelation::VALUE_METHODS
+# Did you mean?  Hole::ActiveRecord_AssociationRelation::CLAUSE_METHODS
+# uninitialized constant Hole::ActiveRecord_Associations_CollectionProxy::CLAUSE_METHODS
+# Did you mean?  Hole::ActiveRecord_Associations_CollectionProxy::ClassMethods
+#                Hole::ClassMethods
+#                Hole::ActiveRecord_Associations_CollectionProxy::VALUE_METHODS
+# uninitialized constant Hole::ActiveRecord_Associations_CollectionProxy::DEFAULT_VALUES
+# uninitialized constant Hole::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_ARRAY
+# Did you mean?  Hole::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_HASH
+# uninitialized constant Hole::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_HASH
+# Did you mean?  Hole::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_ARRAY
+# uninitialized constant Hole::ActiveRecord_Associations_CollectionProxy::INVALID_METHODS_FOR_DELETE_ALL
+# uninitialized constant Hole::ActiveRecord_Associations_CollectionProxy::MULTI_VALUE_METHODS
+# uninitialized constant Hole::ActiveRecord_Associations_CollectionProxy::ONE_AS_ONE
+# uninitialized constant Hole::ActiveRecord_Associations_CollectionProxy::ORDER_IGNORE_MESSAGE
+# uninitialized constant Hole::ActiveRecord_Associations_CollectionProxy::SINGLE_VALUE_METHODS
+# uninitialized constant Hole::ActiveRecord_Associations_CollectionProxy::STRUCTURAL_OR_METHODS
+# uninitialized constant Hole::ActiveRecord_Associations_CollectionProxy::VALID_DIRECTIONS
+# uninitialized constant Hole::ActiveRecord_Associations_CollectionProxy::VALID_UNSCOPING_VALUES
+# uninitialized constant Hole::ActiveRecord_Associations_CollectionProxy::VALUE_METHODS
+# Did you mean?  Hole::ActiveRecord_Associations_CollectionProxy::CLAUSE_METHODS
+# uninitialized constant Hole::ActiveRecord_Relation::CLAUSE_METHODS
+# Did you mean?  Hole::ActiveRecord_Relation::ClassMethods
+#                Hole::ClassMethods
+#                Hole::ActiveRecord_Relation::VALUE_METHODS
+# uninitialized constant Hole::ActiveRecord_Relation::DEFAULT_VALUES
+# uninitialized constant Hole::ActiveRecord_Relation::FROZEN_EMPTY_ARRAY
+# Did you mean?  Hole::ActiveRecord_Relation::FROZEN_EMPTY_HASH
+# uninitialized constant Hole::ActiveRecord_Relation::FROZEN_EMPTY_HASH
+# Did you mean?  Hole::ActiveRecord_Relation::FROZEN_EMPTY_ARRAY
+# uninitialized constant Hole::ActiveRecord_Relation::INVALID_METHODS_FOR_DELETE_ALL
+# uninitialized constant Hole::ActiveRecord_Relation::MULTI_VALUE_METHODS
+# uninitialized constant Hole::ActiveRecord_Relation::ONE_AS_ONE
+# uninitialized constant Hole::ActiveRecord_Relation::ORDER_IGNORE_MESSAGE
+# uninitialized constant Hole::ActiveRecord_Relation::SINGLE_VALUE_METHODS
+# uninitialized constant Hole::ActiveRecord_Relation::STRUCTURAL_OR_METHODS
+# uninitialized constant Hole::ActiveRecord_Relation::VALID_DIRECTIONS
+# uninitialized constant Hole::ActiveRecord_Relation::VALID_UNSCOPING_VALUES
+# uninitialized constant Hole::ActiveRecord_Relation::VALUE_METHODS
+# Did you mean?  Hole::ActiveRecord_Relation::CLAUSE_METHODS
 # wrong constant name reload_tee
-# wrong constant name tee
-# wrong constant name tee=
-# wrong constant name <static-init>
 # wrong constant name <static-init>
 # uninitialized constant I18n::Backend::KeyValue::DEFAULT_REPLACEMENT_CHAR
 # uninitialized constant I18n::Backend::KeyValue::FLATTEN_SEPARATOR
@@ -4292,6 +4730,7 @@
 # wrong constant name rc_file_generators
 # wrong constant name run_config
 # wrong constant name setup
+# wrong constant name get_type
 # uninitialized constant Integer::EXABYTE
 # Did you mean?  Integer::TERABYTE
 #                Integer::MEGABYTE
@@ -4321,6 +4760,11 @@
 # uninitialized constant LUSolve
 # uninitialized constant LUSolve
 # uninitialized constant Listen::Adapter::Windows::DEFAULTS
+# wrong constant name debug!
+# wrong constant name error!
+# wrong constant name fatal!
+# wrong constant name info!
+# wrong constant name warn!
 # uninitialized constant Logger::LogDevice::SiD
 # uninitialized constant Lumberjack::Device::LogFile::DEFAULT_ADDITIONAL_LINES_TEMPLATE
 # uninitialized constant Lumberjack::Device::LogFile::DEFAULT_FIRST_LINE_TEMPLATE
@@ -6231,18 +6675,18 @@
 # Did you mean?  Net::IMAP::OP_NO_SSLv2
 # uninitialized constant Net::IMAP::OP_NO_TICKET
 # uninitialized constant Net::IMAP::OP_NO_TLSv1
-# Did you mean?  Net::IMAP::OP_NO_TLSv1_2
-#                Net::IMAP::OP_NO_TLSv1_1
+# Did you mean?  Net::IMAP::OP_NO_TLSv1_1
 #                Net::IMAP::OP_NO_TLSv1_3
+#                Net::IMAP::OP_NO_TLSv1_2
 # uninitialized constant Net::IMAP::OP_NO_TLSv1_1
-# Did you mean?  Net::IMAP::OP_NO_TLSv1_2
-#                Net::IMAP::OP_NO_TLSv1_3
+# Did you mean?  Net::IMAP::OP_NO_TLSv1_3
+#                Net::IMAP::OP_NO_TLSv1_2
 # uninitialized constant Net::IMAP::OP_NO_TLSv1_2
 # Did you mean?  Net::IMAP::OP_NO_TLSv1_1
 #                Net::IMAP::OP_NO_TLSv1_3
 # uninitialized constant Net::IMAP::OP_NO_TLSv1_3
-# Did you mean?  Net::IMAP::OP_NO_TLSv1_2
-#                Net::IMAP::OP_NO_TLSv1_1
+# Did you mean?  Net::IMAP::OP_NO_TLSv1_1
+#                Net::IMAP::OP_NO_TLSv1_2
 # uninitialized constant Net::IMAP::OP_PKCS1_CHECK_1
 # Did you mean?  Net::IMAP::OP_PKCS1_CHECK_2
 # uninitialized constant Net::IMAP::OP_PKCS1_CHECK_2
@@ -6605,6 +7049,55 @@
 # wrong constant name ==
 # wrong constant name to_der
 # wrong constant name fips_mode
+# wrong constant name __id__!
+# wrong constant name __send__!
+# wrong constant name class!
+# wrong constant name clone!
+# wrong constant name define_singleton_method!
+# wrong constant name delete_field!
+# wrong constant name dig!
+# wrong constant name display!
+# wrong constant name dup!
+# wrong constant name each_pair!
+# wrong constant name encode_with
+# wrong constant name encode_with!
+# wrong constant name enum_for!
+# wrong constant name extend!
+# wrong constant name freeze!
+# wrong constant name hash!
+# wrong constant name init_with
+# wrong constant name init_with!
+# wrong constant name inspect!
+# wrong constant name instance_eval!
+# wrong constant name instance_exec!
+# wrong constant name instance_variable_get!
+# wrong constant name instance_variable_set!
+# wrong constant name instance_variables!
+# wrong constant name itself!
+# wrong constant name marshal_dump!
+# wrong constant name method!
+# wrong constant name methods!
+# wrong constant name object_id!
+# wrong constant name private_methods!
+# wrong constant name protected_methods!
+# wrong constant name public_method!
+# wrong constant name public_methods!
+# wrong constant name public_send!
+# wrong constant name remove_instance_variable!
+# wrong constant name send!
+# wrong constant name singleton_class!
+# wrong constant name singleton_method!
+# wrong constant name singleton_methods!
+# wrong constant name taint!
+# wrong constant name tap!
+# wrong constant name then!
+# wrong constant name to_enum!
+# wrong constant name to_h!
+# wrong constant name to_s!
+# wrong constant name trust!
+# wrong constant name untaint!
+# wrong constant name untrust!
+# wrong constant name yield_self!
 # wrong constant name <<
 # wrong constant name io
 # wrong constant name size
@@ -6633,9 +7126,1503 @@
 # uninitialized constant PackageSpec
 # uninitialized constant PackageSpec
 # wrong constant name <Class:PackageSpec>
+# wrong constant name <Class:ConflictResolver>
+# wrong constant name <Class:Debugging>
+# wrong constant name <Class:DetachedRbiGenerator>
+# wrong constant name <Class:ParseError>
+# wrong constant name <Class:Plugin>
+# wrong constant name <Class:RbiGenerator>
+# wrong constant name <Class:TypeLoader>
+# wrong constant name <Class:TypeParser>
+# wrong constant name resolve_conflicts
+# wrong constant name <static-init>
+# wrong constant name <Class:Tree>
+# wrong constant name <static-init>
+# wrong constant name begin
+# wrong constant name end
+# wrong constant name here
+# wrong constant name line_prefix
+# wrong constant name text_prefix
+# wrong constant name <static-init>
+# wrong constant name debug_mode=
+# wrong constant name debug_mode?
+# wrong constant name debug_puts
+# wrong constant name name_for_debug_caller
+# wrong constant name detached!
+# wrong constant name <static-init>
+# wrong constant name buffer
+# wrong constant name initialize
+# wrong constant name range
+# wrong constant name <static-init>
+# wrong constant name generate
+# wrong constant name initialize
+# wrong constant name strictness
+# wrong constant name strictness=
+# wrong constant name <static-init>
+# wrong constant name inherited
+# wrong constant name registered_plugins
+# wrong constant name run_plugins
+# wrong constant name <Class:Arbitrary>
+# wrong constant name <Class:Attribute>
+# wrong constant name <Class:ClassNamespace>
+# wrong constant name <Class:Constant>
+# wrong constant name <Class:EnumClassNamespace>
+# wrong constant name <Class:Extend>
+# wrong constant name <Class:Include>
+# wrong constant name <Class:Method>
+# wrong constant name <Class:ModuleNamespace>
+# wrong constant name <Class:Namespace>
+# wrong constant name <Class:Options>
+# wrong constant name <Class:Parameter>
+# wrong constant name <Class:RbiObject>
+# wrong constant name current_plugin
+# wrong constant name current_plugin=
+# wrong constant name initialize
+# wrong constant name options
+# wrong constant name rbi
+# wrong constant name root
+# wrong constant name ==
+# wrong constant name code
+# wrong constant name code=
+# wrong constant name <static-init>
+# wrong constant name class_attribute
+# wrong constant name kind
+# wrong constant name <static-init>
+# wrong constant name abstract
+# wrong constant name superclass
+# wrong constant name <static-init>
+# wrong constant name ==
+# wrong constant name value
+# wrong constant name <static-init>
+# wrong constant name enums
+# wrong constant name <static-init>
+# wrong constant name ==
+# wrong constant name <static-init>
+# wrong constant name ==
+# wrong constant name <static-init>
+# wrong constant name ==
+# wrong constant name abstract
+# wrong constant name class_method
+# wrong constant name final
+# wrong constant name implementation
+# wrong constant name overridable
+# wrong constant name override
+# wrong constant name parameters
+# wrong constant name return_type
+# wrong constant name type_parameters
+# wrong constant name <static-init>
+# wrong constant name interface
+# wrong constant name <static-init>
+# wrong constant name add_comment_to_next_child
+# wrong constant name children
+# wrong constant name constants
+# wrong constant name create_arbitrary
+# wrong constant name create_attr
+# wrong constant name create_attr_accessor
+# wrong constant name create_attr_reader
+# wrong constant name create_attr_writer
+# wrong constant name create_attribute
+# wrong constant name create_class
+# wrong constant name create_constant
+# wrong constant name create_enum_class
+# wrong constant name create_extend
+# wrong constant name create_extends
+# wrong constant name create_include
+# wrong constant name create_includes
+# wrong constant name create_method
+# wrong constant name create_module
+# wrong constant name create_type_alias
+# wrong constant name extends
+# wrong constant name final
+# wrong constant name includes
+# wrong constant name path
+# wrong constant name <static-init>
+# wrong constant name break_params
+# wrong constant name indented
+# wrong constant name initialize
+# wrong constant name sort_namespaces
+# wrong constant name tab_size
+# wrong constant name <static-init>
+# wrong constant name ==
+# wrong constant name default
+# wrong constant name initialize
+# wrong constant name kind
+# wrong constant name name
+# wrong constant name name_without_kind
+# wrong constant name to_def_param
+# wrong constant name to_sig_param
+# wrong constant name type
+# wrong constant name <static-init>
+# wrong constant name add_comment
+# wrong constant name add_comments
+# wrong constant name comments
+# wrong constant name describe
+# wrong constant name generate_rbi
+# wrong constant name generated_by
+# wrong constant name generator
+# wrong constant name initialize
+# wrong constant name merge_into_self
+# wrong constant name mergeable?
+# wrong constant name name
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name load_file
+# wrong constant name load_project
+# wrong constant name load_source
+# wrong constant name <Class:IntermediateSig>
+# wrong constant name <Class:NodePath>
+# wrong constant name ast
+# wrong constant name ast=
+# wrong constant name body_has_modifier?
+# wrong constant name body_includes_and_extends
+# wrong constant name constant_names
+# wrong constant name initialize
+# wrong constant name node_to_s
+# wrong constant name parse_all
+# wrong constant name parse_err
+# wrong constant name parse_path_to_object
+# wrong constant name parse_sig_into_methods
+# wrong constant name parse_sig_into_sig
+# wrong constant name sig_node?
+# wrong constant name unknown_node_errors
+# wrong constant name zip_by
+# wrong constant name abstract
+# wrong constant name abstract=
+# wrong constant name final
+# wrong constant name final=
+# wrong constant name initialize
+# wrong constant name overridable
+# wrong constant name overridable=
+# wrong constant name override
+# wrong constant name override=
+# wrong constant name params
+# wrong constant name params=
+# wrong constant name return_type
+# wrong constant name return_type=
+# wrong constant name type_parameters
+# wrong constant name type_parameters=
+# wrong constant name <static-init>
+# wrong constant name inherited
+# wrong constant name child
+# wrong constant name indices
+# wrong constant name initialize
+# wrong constant name parent
+# wrong constant name sibling
+# wrong constant name traverse
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name from_source
+# wrong constant name <static-init>
+# wrong constant name <Class:Ruby24>
+# wrong constant name <Class:Ruby26>
+# uninitialized constant Parser::Ruby24::Racc_Main_Parsing_Routine
+# uninitialized constant Parser::Ruby24::Racc_Runtime_Core_Id_C
+# Did you mean?  Parser::Ruby24::Racc_Runtime_Core_Version_C
+# uninitialized constant Parser::Ruby24::Racc_Runtime_Core_Revision
+# Did you mean?  Parser::Ruby24::Racc_Runtime_Core_Revision_C
+#                Parser::Ruby24::Racc_Runtime_Core_Revision_R
+#                Parser::Ruby24::Racc_Runtime_Revision
+#                Parser::Ruby24::Racc_Runtime_Core_Version
+#                Parser::Ruby24::Racc_Runtime_Core_Version_R
+#                Parser::Ruby24::Racc_Runtime_Core_Version_C
+#                Parser::Ruby24::Racc_Runtime_Version
+#                Parser::Ruby24::Racc_Runtime_Core_Id_C
+# uninitialized constant Parser::Ruby24::Racc_Runtime_Core_Revision_C
+# Did you mean?  Parser::Ruby24::Racc_Runtime_Core_Revision_R
+#                Parser::Ruby24::Racc_Runtime_Revision
+#                Parser::Ruby24::Racc_Runtime_Core_Version_R
+#                Parser::Ruby24::Racc_Runtime_Core_Version_C
+#                Parser::Ruby24::Racc_Runtime_Core_Version
+#                Parser::Ruby24::Racc_Runtime_Core_Id_C
+# uninitialized constant Parser::Ruby24::Racc_Runtime_Core_Revision_R
+# Did you mean?  Parser::Ruby24::Racc_Runtime_Core_Revision_C
+#                Parser::Ruby24::Racc_Runtime_Revision
+#                Parser::Ruby24::Racc_Runtime_Core_Version_R
+#                Parser::Ruby24::Racc_Runtime_Core_Version_C
+#                Parser::Ruby24::Racc_Runtime_Core_Version
+# uninitialized constant Parser::Ruby24::Racc_Runtime_Core_Version
+# Did you mean?  Parser::Ruby24::Racc_Runtime_Revision
+#                Parser::Ruby24::Racc_Runtime_Core_Revision
+#                Parser::Ruby24::Racc_Runtime_Core_Version_R
+#                Parser::Ruby24::Racc_Runtime_Core_Version_C
+#                Parser::Ruby24::Racc_Runtime_Core_Revision_R
+#                Parser::Ruby24::Racc_Runtime_Core_Revision_C
+#                Parser::Ruby24::Racc_Runtime_Version
+#                Parser::Ruby24::Racc_Runtime_Core_Id_C
+# uninitialized constant Parser::Ruby24::Racc_Runtime_Core_Version_C
+# Did you mean?  Parser::Ruby24::Racc_Runtime_Core_Version_R
+#                Parser::Ruby24::Racc_Runtime_Core_Revision_R
+#                Parser::Ruby24::Racc_Runtime_Core_Revision_C
+#                Parser::Ruby24::Racc_Runtime_Revision
+#                Parser::Ruby24::Racc_Runtime_Core_Revision
+#                Parser::Ruby24::Racc_Runtime_Version
+#                Parser::Ruby24::Racc_Runtime_Core_Id_C
+# uninitialized constant Parser::Ruby24::Racc_Runtime_Core_Version_R
+# Did you mean?  Parser::Ruby24::Racc_Runtime_Core_Version_C
+#                Parser::Ruby24::Racc_Runtime_Core_Revision_R
+#                Parser::Ruby24::Racc_Runtime_Core_Revision_C
+#                Parser::Ruby24::Racc_Runtime_Revision
+#                Parser::Ruby24::Racc_Runtime_Core_Revision
+#                Parser::Ruby24::Racc_Runtime_Version
+#                Parser::Ruby24::Racc_Runtime_Core_Id_C
+# uninitialized constant Parser::Ruby24::Racc_Runtime_Revision
+# Did you mean?  Parser::Ruby24::Racc_Runtime_Version
+#                Parser::Ruby24::Racc_Runtime_Core_Version
+#                Parser::Ruby24::Racc_Runtime_Core_Revision
+# uninitialized constant Parser::Ruby24::Racc_Runtime_Type
+# uninitialized constant Parser::Ruby24::Racc_Runtime_Version
+# Did you mean?  Parser::Ruby24::Racc_Runtime_Revision
+#                Parser::Ruby24::Racc_Runtime_Core_Version
+# uninitialized constant Parser::Ruby24::Racc_YY_Parse_Method
+# wrong constant name _reduce_10
+# wrong constant name _reduce_100
+# wrong constant name _reduce_101
+# wrong constant name _reduce_102
+# wrong constant name _reduce_103
+# wrong constant name _reduce_104
+# wrong constant name _reduce_105
+# wrong constant name _reduce_106
+# wrong constant name _reduce_107
+# wrong constant name _reduce_108
+# wrong constant name _reduce_11
+# wrong constant name _reduce_110
+# wrong constant name _reduce_111
+# wrong constant name _reduce_112
+# wrong constant name _reduce_118
+# wrong constant name _reduce_12
+# wrong constant name _reduce_122
+# wrong constant name _reduce_123
+# wrong constant name _reduce_124
+# wrong constant name _reduce_13
+# wrong constant name _reduce_14
+# wrong constant name _reduce_16
+# wrong constant name _reduce_17
+# wrong constant name _reduce_18
+# wrong constant name _reduce_19
+# wrong constant name _reduce_196
+# wrong constant name _reduce_197
+# wrong constant name _reduce_198
+# wrong constant name _reduce_199
+# wrong constant name _reduce_2
+# wrong constant name _reduce_20
+# wrong constant name _reduce_200
+# wrong constant name _reduce_201
+# wrong constant name _reduce_202
+# wrong constant name _reduce_203
+# wrong constant name _reduce_204
+# wrong constant name _reduce_205
+# wrong constant name _reduce_206
+# wrong constant name _reduce_207
+# wrong constant name _reduce_208
+# wrong constant name _reduce_209
+# wrong constant name _reduce_21
+# wrong constant name _reduce_210
+# wrong constant name _reduce_211
+# wrong constant name _reduce_212
+# wrong constant name _reduce_213
+# wrong constant name _reduce_214
+# wrong constant name _reduce_215
+# wrong constant name _reduce_216
+# wrong constant name _reduce_217
+# wrong constant name _reduce_218
+# wrong constant name _reduce_219
+# wrong constant name _reduce_22
+# wrong constant name _reduce_220
+# wrong constant name _reduce_221
+# wrong constant name _reduce_222
+# wrong constant name _reduce_223
+# wrong constant name _reduce_224
+# wrong constant name _reduce_225
+# wrong constant name _reduce_226
+# wrong constant name _reduce_227
+# wrong constant name _reduce_228
+# wrong constant name _reduce_229
+# wrong constant name _reduce_23
+# wrong constant name _reduce_230
+# wrong constant name _reduce_231
+# wrong constant name _reduce_232
+# wrong constant name _reduce_233
+# wrong constant name _reduce_234
+# wrong constant name _reduce_235
+# wrong constant name _reduce_236
+# wrong constant name _reduce_24
+# wrong constant name _reduce_241
+# wrong constant name _reduce_242
+# wrong constant name _reduce_244
+# wrong constant name _reduce_245
+# wrong constant name _reduce_246
+# wrong constant name _reduce_248
+# wrong constant name _reduce_25
+# wrong constant name _reduce_251
+# wrong constant name _reduce_252
+# wrong constant name _reduce_253
+# wrong constant name _reduce_254
+# wrong constant name _reduce_255
+# wrong constant name _reduce_256
+# wrong constant name _reduce_257
+# wrong constant name _reduce_258
+# wrong constant name _reduce_259
+# wrong constant name _reduce_26
+# wrong constant name _reduce_260
+# wrong constant name _reduce_261
+# wrong constant name _reduce_262
+# wrong constant name _reduce_263
+# wrong constant name _reduce_264
+# wrong constant name _reduce_265
+# wrong constant name _reduce_266
+# wrong constant name _reduce_267
+# wrong constant name _reduce_269
+# wrong constant name _reduce_27
+# wrong constant name _reduce_270
+# wrong constant name _reduce_271
+# wrong constant name _reduce_28
+# wrong constant name _reduce_282
+# wrong constant name _reduce_283
+# wrong constant name _reduce_284
+# wrong constant name _reduce_285
+# wrong constant name _reduce_286
+# wrong constant name _reduce_287
+# wrong constant name _reduce_288
+# wrong constant name _reduce_289
+# wrong constant name _reduce_290
+# wrong constant name _reduce_291
+# wrong constant name _reduce_292
+# wrong constant name _reduce_293
+# wrong constant name _reduce_294
+# wrong constant name _reduce_295
+# wrong constant name _reduce_296
+# wrong constant name _reduce_297
+# wrong constant name _reduce_298
+# wrong constant name _reduce_299
+# wrong constant name _reduce_3
+# wrong constant name _reduce_30
+# wrong constant name _reduce_300
+# wrong constant name _reduce_301
+# wrong constant name _reduce_303
+# wrong constant name _reduce_304
+# wrong constant name _reduce_305
+# wrong constant name _reduce_306
+# wrong constant name _reduce_307
+# wrong constant name _reduce_308
+# wrong constant name _reduce_309
+# wrong constant name _reduce_31
+# wrong constant name _reduce_310
+# wrong constant name _reduce_311
+# wrong constant name _reduce_312
+# wrong constant name _reduce_313
+# wrong constant name _reduce_314
+# wrong constant name _reduce_315
+# wrong constant name _reduce_316
+# wrong constant name _reduce_317
+# wrong constant name _reduce_318
+# wrong constant name _reduce_319
+# wrong constant name _reduce_32
+# wrong constant name _reduce_320
+# wrong constant name _reduce_321
+# wrong constant name _reduce_322
+# wrong constant name _reduce_323
+# wrong constant name _reduce_324
+# wrong constant name _reduce_325
+# wrong constant name _reduce_326
+# wrong constant name _reduce_327
+# wrong constant name _reduce_328
+# wrong constant name _reduce_329
+# wrong constant name _reduce_330
+# wrong constant name _reduce_331
+# wrong constant name _reduce_332
+# wrong constant name _reduce_333
+# wrong constant name _reduce_337
+# wrong constant name _reduce_34
+# wrong constant name _reduce_341
+# wrong constant name _reduce_343
+# wrong constant name _reduce_346
+# wrong constant name _reduce_347
+# wrong constant name _reduce_348
+# wrong constant name _reduce_349
+# wrong constant name _reduce_35
+# wrong constant name _reduce_351
+# wrong constant name _reduce_352
+# wrong constant name _reduce_353
+# wrong constant name _reduce_354
+# wrong constant name _reduce_355
+# wrong constant name _reduce_356
+# wrong constant name _reduce_357
+# wrong constant name _reduce_358
+# wrong constant name _reduce_359
+# wrong constant name _reduce_36
+# wrong constant name _reduce_360
+# wrong constant name _reduce_361
+# wrong constant name _reduce_362
+# wrong constant name _reduce_363
+# wrong constant name _reduce_364
+# wrong constant name _reduce_365
+# wrong constant name _reduce_366
+# wrong constant name _reduce_367
+# wrong constant name _reduce_368
+# wrong constant name _reduce_369
+# wrong constant name _reduce_37
+# wrong constant name _reduce_371
+# wrong constant name _reduce_372
+# wrong constant name _reduce_373
+# wrong constant name _reduce_374
+# wrong constant name _reduce_375
+# wrong constant name _reduce_376
+# wrong constant name _reduce_377
+# wrong constant name _reduce_378
+# wrong constant name _reduce_38
+# wrong constant name _reduce_380
+# wrong constant name _reduce_381
+# wrong constant name _reduce_382
+# wrong constant name _reduce_383
+# wrong constant name _reduce_384
+# wrong constant name _reduce_385
+# wrong constant name _reduce_386
+# wrong constant name _reduce_387
+# wrong constant name _reduce_388
+# wrong constant name _reduce_389
+# wrong constant name _reduce_39
+# wrong constant name _reduce_391
+# wrong constant name _reduce_392
+# wrong constant name _reduce_393
+# wrong constant name _reduce_394
+# wrong constant name _reduce_395
+# wrong constant name _reduce_396
+# wrong constant name _reduce_397
+# wrong constant name _reduce_398
+# wrong constant name _reduce_399
+# wrong constant name _reduce_4
+# wrong constant name _reduce_40
+# wrong constant name _reduce_400
+# wrong constant name _reduce_401
+# wrong constant name _reduce_402
+# wrong constant name _reduce_403
+# wrong constant name _reduce_404
+# wrong constant name _reduce_405
+# wrong constant name _reduce_406
+# wrong constant name _reduce_407
+# wrong constant name _reduce_408
+# wrong constant name _reduce_409
+# wrong constant name _reduce_41
+# wrong constant name _reduce_410
+# wrong constant name _reduce_411
+# wrong constant name _reduce_412
+# wrong constant name _reduce_413
+# wrong constant name _reduce_414
+# wrong constant name _reduce_415
+# wrong constant name _reduce_416
+# wrong constant name _reduce_417
+# wrong constant name _reduce_418
+# wrong constant name _reduce_419
+# wrong constant name _reduce_420
+# wrong constant name _reduce_421
+# wrong constant name _reduce_422
+# wrong constant name _reduce_423
+# wrong constant name _reduce_424
+# wrong constant name _reduce_425
+# wrong constant name _reduce_427
+# wrong constant name _reduce_428
+# wrong constant name _reduce_429
+# wrong constant name _reduce_43
+# wrong constant name _reduce_432
+# wrong constant name _reduce_434
+# wrong constant name _reduce_439
+# wrong constant name _reduce_440
+# wrong constant name _reduce_441
+# wrong constant name _reduce_442
+# wrong constant name _reduce_443
+# wrong constant name _reduce_444
+# wrong constant name _reduce_445
+# wrong constant name _reduce_446
+# wrong constant name _reduce_447
+# wrong constant name _reduce_448
+# wrong constant name _reduce_449
+# wrong constant name _reduce_450
+# wrong constant name _reduce_451
+# wrong constant name _reduce_452
+# wrong constant name _reduce_453
+# wrong constant name _reduce_454
+# wrong constant name _reduce_455
+# wrong constant name _reduce_456
+# wrong constant name _reduce_457
+# wrong constant name _reduce_458
+# wrong constant name _reduce_459
+# wrong constant name _reduce_46
+# wrong constant name _reduce_460
+# wrong constant name _reduce_461
+# wrong constant name _reduce_462
+# wrong constant name _reduce_463
+# wrong constant name _reduce_464
+# wrong constant name _reduce_465
+# wrong constant name _reduce_466
+# wrong constant name _reduce_467
+# wrong constant name _reduce_468
+# wrong constant name _reduce_469
+# wrong constant name _reduce_47
+# wrong constant name _reduce_470
+# wrong constant name _reduce_471
+# wrong constant name _reduce_472
+# wrong constant name _reduce_473
+# wrong constant name _reduce_475
+# wrong constant name _reduce_476
+# wrong constant name _reduce_477
+# wrong constant name _reduce_478
+# wrong constant name _reduce_479
+# wrong constant name _reduce_48
+# wrong constant name _reduce_480
+# wrong constant name _reduce_481
+# wrong constant name _reduce_482
+# wrong constant name _reduce_483
+# wrong constant name _reduce_484
+# wrong constant name _reduce_485
+# wrong constant name _reduce_486
+# wrong constant name _reduce_487
+# wrong constant name _reduce_488
+# wrong constant name _reduce_489
+# wrong constant name _reduce_49
+# wrong constant name _reduce_490
+# wrong constant name _reduce_491
+# wrong constant name _reduce_492
+# wrong constant name _reduce_493
+# wrong constant name _reduce_494
+# wrong constant name _reduce_495
+# wrong constant name _reduce_496
+# wrong constant name _reduce_497
+# wrong constant name _reduce_498
+# wrong constant name _reduce_499
+# wrong constant name _reduce_5
+# wrong constant name _reduce_500
+# wrong constant name _reduce_501
+# wrong constant name _reduce_502
+# wrong constant name _reduce_503
+# wrong constant name _reduce_504
+# wrong constant name _reduce_505
+# wrong constant name _reduce_506
+# wrong constant name _reduce_507
+# wrong constant name _reduce_508
+# wrong constant name _reduce_509
+# wrong constant name _reduce_510
+# wrong constant name _reduce_511
+# wrong constant name _reduce_512
+# wrong constant name _reduce_513
+# wrong constant name _reduce_514
+# wrong constant name _reduce_515
+# wrong constant name _reduce_516
+# wrong constant name _reduce_517
+# wrong constant name _reduce_518
+# wrong constant name _reduce_519
+# wrong constant name _reduce_520
+# wrong constant name _reduce_521
+# wrong constant name _reduce_522
+# wrong constant name _reduce_523
+# wrong constant name _reduce_524
+# wrong constant name _reduce_525
+# wrong constant name _reduce_526
+# wrong constant name _reduce_527
+# wrong constant name _reduce_528
+# wrong constant name _reduce_529
+# wrong constant name _reduce_530
+# wrong constant name _reduce_531
+# wrong constant name _reduce_533
+# wrong constant name _reduce_534
+# wrong constant name _reduce_535
+# wrong constant name _reduce_536
+# wrong constant name _reduce_537
+# wrong constant name _reduce_538
+# wrong constant name _reduce_539
+# wrong constant name _reduce_540
+# wrong constant name _reduce_541
+# wrong constant name _reduce_542
+# wrong constant name _reduce_543
+# wrong constant name _reduce_544
+# wrong constant name _reduce_545
+# wrong constant name _reduce_546
+# wrong constant name _reduce_547
+# wrong constant name _reduce_55
+# wrong constant name _reduce_550
+# wrong constant name _reduce_551
+# wrong constant name _reduce_552
+# wrong constant name _reduce_553
+# wrong constant name _reduce_554
+# wrong constant name _reduce_555
+# wrong constant name _reduce_556
+# wrong constant name _reduce_557
+# wrong constant name _reduce_56
+# wrong constant name _reduce_560
+# wrong constant name _reduce_561
+# wrong constant name _reduce_564
+# wrong constant name _reduce_565
+# wrong constant name _reduce_566
+# wrong constant name _reduce_568
+# wrong constant name _reduce_569
+# wrong constant name _reduce_57
+# wrong constant name _reduce_571
+# wrong constant name _reduce_572
+# wrong constant name _reduce_573
+# wrong constant name _reduce_574
+# wrong constant name _reduce_575
+# wrong constant name _reduce_576
+# wrong constant name _reduce_589
+# wrong constant name _reduce_59
+# wrong constant name _reduce_590
+# wrong constant name _reduce_595
+# wrong constant name _reduce_596
+# wrong constant name _reduce_6
+# wrong constant name _reduce_60
+# wrong constant name _reduce_600
+# wrong constant name _reduce_604
+# wrong constant name _reduce_61
+# wrong constant name _reduce_62
+# wrong constant name _reduce_63
+# wrong constant name _reduce_64
+# wrong constant name _reduce_65
+# wrong constant name _reduce_66
+# wrong constant name _reduce_67
+# wrong constant name _reduce_68
+# wrong constant name _reduce_69
+# wrong constant name _reduce_70
+# wrong constant name _reduce_71
+# wrong constant name _reduce_72
+# wrong constant name _reduce_73
+# wrong constant name _reduce_75
+# wrong constant name _reduce_76
+# wrong constant name _reduce_77
+# wrong constant name _reduce_78
+# wrong constant name _reduce_79
+# wrong constant name _reduce_8
+# wrong constant name _reduce_80
+# wrong constant name _reduce_81
+# wrong constant name _reduce_82
+# wrong constant name _reduce_83
+# wrong constant name _reduce_85
+# wrong constant name _reduce_86
+# wrong constant name _reduce_87
+# wrong constant name _reduce_88
+# wrong constant name _reduce_89
+# wrong constant name _reduce_9
+# wrong constant name _reduce_90
+# wrong constant name _reduce_91
+# wrong constant name _reduce_92
+# wrong constant name _reduce_93
+# wrong constant name _reduce_94
+# wrong constant name _reduce_95
+# wrong constant name _reduce_96
+# wrong constant name _reduce_97
+# wrong constant name _reduce_98
+# wrong constant name _reduce_99
+# wrong constant name _reduce_none
+# wrong constant name default_encoding
+# wrong constant name version
+# wrong constant name <static-init>
+# uninitialized constant Parser::Ruby26::Racc_Main_Parsing_Routine
+# uninitialized constant Parser::Ruby26::Racc_Runtime_Core_Id_C
+# Did you mean?  Parser::Ruby26::Racc_Runtime_Core_Version_C
+# uninitialized constant Parser::Ruby26::Racc_Runtime_Core_Revision
+# Did you mean?  Parser::Ruby26::Racc_Runtime_Core_Revision_C
+#                Parser::Ruby26::Racc_Runtime_Core_Revision_R
+#                Parser::Ruby26::Racc_Runtime_Revision
+#                Parser::Ruby26::Racc_Runtime_Core_Version
+#                Parser::Ruby26::Racc_Runtime_Core_Version_R
+#                Parser::Ruby26::Racc_Runtime_Core_Version_C
+#                Parser::Ruby26::Racc_Runtime_Version
+#                Parser::Ruby26::Racc_Runtime_Core_Id_C
+# uninitialized constant Parser::Ruby26::Racc_Runtime_Core_Revision_C
+# Did you mean?  Parser::Ruby26::Racc_Runtime_Core_Revision_R
+#                Parser::Ruby26::Racc_Runtime_Revision
+#                Parser::Ruby26::Racc_Runtime_Core_Version_R
+#                Parser::Ruby26::Racc_Runtime_Core_Version_C
+#                Parser::Ruby26::Racc_Runtime_Core_Version
+#                Parser::Ruby26::Racc_Runtime_Core_Id_C
+# uninitialized constant Parser::Ruby26::Racc_Runtime_Core_Revision_R
+# Did you mean?  Parser::Ruby26::Racc_Runtime_Core_Revision_C
+#                Parser::Ruby26::Racc_Runtime_Revision
+#                Parser::Ruby26::Racc_Runtime_Core_Version_R
+#                Parser::Ruby26::Racc_Runtime_Core_Version_C
+#                Parser::Ruby26::Racc_Runtime_Core_Version
+# uninitialized constant Parser::Ruby26::Racc_Runtime_Core_Version
+# Did you mean?  Parser::Ruby26::Racc_Runtime_Revision
+#                Parser::Ruby26::Racc_Runtime_Core_Revision
+#                Parser::Ruby26::Racc_Runtime_Core_Version_R
+#                Parser::Ruby26::Racc_Runtime_Core_Version_C
+#                Parser::Ruby26::Racc_Runtime_Core_Revision_R
+#                Parser::Ruby26::Racc_Runtime_Core_Revision_C
+#                Parser::Ruby26::Racc_Runtime_Version
+#                Parser::Ruby26::Racc_Runtime_Core_Id_C
+# uninitialized constant Parser::Ruby26::Racc_Runtime_Core_Version_C
+# Did you mean?  Parser::Ruby26::Racc_Runtime_Core_Version_R
+#                Parser::Ruby26::Racc_Runtime_Core_Revision_R
+#                Parser::Ruby26::Racc_Runtime_Core_Revision_C
+#                Parser::Ruby26::Racc_Runtime_Revision
+#                Parser::Ruby26::Racc_Runtime_Core_Revision
+#                Parser::Ruby26::Racc_Runtime_Version
+#                Parser::Ruby26::Racc_Runtime_Core_Id_C
+# uninitialized constant Parser::Ruby26::Racc_Runtime_Core_Version_R
+# Did you mean?  Parser::Ruby26::Racc_Runtime_Core_Version_C
+#                Parser::Ruby26::Racc_Runtime_Core_Revision_R
+#                Parser::Ruby26::Racc_Runtime_Core_Revision_C
+#                Parser::Ruby26::Racc_Runtime_Revision
+#                Parser::Ruby26::Racc_Runtime_Core_Revision
+#                Parser::Ruby26::Racc_Runtime_Version
+#                Parser::Ruby26::Racc_Runtime_Core_Id_C
+# uninitialized constant Parser::Ruby26::Racc_Runtime_Revision
+# Did you mean?  Parser::Ruby26::Racc_Runtime_Version
+#                Parser::Ruby26::Racc_Runtime_Core_Version
+#                Parser::Ruby26::Racc_Runtime_Core_Revision
+# uninitialized constant Parser::Ruby26::Racc_Runtime_Type
+# uninitialized constant Parser::Ruby26::Racc_Runtime_Version
+# Did you mean?  Parser::Ruby26::Racc_Runtime_Revision
+#                Parser::Ruby26::Racc_Runtime_Core_Version
+# uninitialized constant Parser::Ruby26::Racc_YY_Parse_Method
+# wrong constant name _reduce_10
+# wrong constant name _reduce_100
+# wrong constant name _reduce_101
+# wrong constant name _reduce_102
+# wrong constant name _reduce_103
+# wrong constant name _reduce_104
+# wrong constant name _reduce_105
+# wrong constant name _reduce_106
+# wrong constant name _reduce_107
+# wrong constant name _reduce_108
+# wrong constant name _reduce_109
+# wrong constant name _reduce_11
+# wrong constant name _reduce_110
+# wrong constant name _reduce_111
+# wrong constant name _reduce_113
+# wrong constant name _reduce_114
+# wrong constant name _reduce_115
+# wrong constant name _reduce_12
+# wrong constant name _reduce_121
+# wrong constant name _reduce_125
+# wrong constant name _reduce_126
+# wrong constant name _reduce_127
+# wrong constant name _reduce_13
+# wrong constant name _reduce_14
+# wrong constant name _reduce_15
+# wrong constant name _reduce_17
+# wrong constant name _reduce_18
+# wrong constant name _reduce_19
+# wrong constant name _reduce_199
+# wrong constant name _reduce_2
+# wrong constant name _reduce_20
+# wrong constant name _reduce_200
+# wrong constant name _reduce_201
+# wrong constant name _reduce_202
+# wrong constant name _reduce_203
+# wrong constant name _reduce_204
+# wrong constant name _reduce_205
+# wrong constant name _reduce_206
+# wrong constant name _reduce_207
+# wrong constant name _reduce_208
+# wrong constant name _reduce_209
+# wrong constant name _reduce_21
+# wrong constant name _reduce_210
+# wrong constant name _reduce_211
+# wrong constant name _reduce_212
+# wrong constant name _reduce_213
+# wrong constant name _reduce_214
+# wrong constant name _reduce_215
+# wrong constant name _reduce_216
+# wrong constant name _reduce_217
+# wrong constant name _reduce_218
+# wrong constant name _reduce_219
+# wrong constant name _reduce_22
+# wrong constant name _reduce_220
+# wrong constant name _reduce_221
+# wrong constant name _reduce_222
+# wrong constant name _reduce_223
+# wrong constant name _reduce_224
+# wrong constant name _reduce_226
+# wrong constant name _reduce_227
+# wrong constant name _reduce_228
+# wrong constant name _reduce_229
+# wrong constant name _reduce_23
+# wrong constant name _reduce_230
+# wrong constant name _reduce_231
+# wrong constant name _reduce_232
+# wrong constant name _reduce_233
+# wrong constant name _reduce_234
+# wrong constant name _reduce_235
+# wrong constant name _reduce_236
+# wrong constant name _reduce_237
+# wrong constant name _reduce_238
+# wrong constant name _reduce_24
+# wrong constant name _reduce_244
+# wrong constant name _reduce_245
+# wrong constant name _reduce_249
+# wrong constant name _reduce_25
+# wrong constant name _reduce_250
+# wrong constant name _reduce_252
+# wrong constant name _reduce_253
+# wrong constant name _reduce_254
+# wrong constant name _reduce_256
+# wrong constant name _reduce_259
+# wrong constant name _reduce_26
+# wrong constant name _reduce_260
+# wrong constant name _reduce_261
+# wrong constant name _reduce_262
+# wrong constant name _reduce_263
+# wrong constant name _reduce_264
+# wrong constant name _reduce_265
+# wrong constant name _reduce_266
+# wrong constant name _reduce_267
+# wrong constant name _reduce_268
+# wrong constant name _reduce_269
+# wrong constant name _reduce_27
+# wrong constant name _reduce_270
+# wrong constant name _reduce_271
+# wrong constant name _reduce_272
+# wrong constant name _reduce_273
+# wrong constant name _reduce_274
+# wrong constant name _reduce_275
+# wrong constant name _reduce_277
+# wrong constant name _reduce_278
+# wrong constant name _reduce_279
+# wrong constant name _reduce_28
+# wrong constant name _reduce_29
+# wrong constant name _reduce_290
+# wrong constant name _reduce_291
+# wrong constant name _reduce_292
+# wrong constant name _reduce_293
+# wrong constant name _reduce_294
+# wrong constant name _reduce_295
+# wrong constant name _reduce_296
+# wrong constant name _reduce_297
+# wrong constant name _reduce_298
+# wrong constant name _reduce_299
+# wrong constant name _reduce_3
+# wrong constant name _reduce_300
+# wrong constant name _reduce_301
+# wrong constant name _reduce_302
+# wrong constant name _reduce_303
+# wrong constant name _reduce_304
+# wrong constant name _reduce_305
+# wrong constant name _reduce_306
+# wrong constant name _reduce_307
+# wrong constant name _reduce_308
+# wrong constant name _reduce_309
+# wrong constant name _reduce_31
+# wrong constant name _reduce_311
+# wrong constant name _reduce_312
+# wrong constant name _reduce_313
+# wrong constant name _reduce_314
+# wrong constant name _reduce_315
+# wrong constant name _reduce_316
+# wrong constant name _reduce_317
+# wrong constant name _reduce_318
+# wrong constant name _reduce_319
+# wrong constant name _reduce_32
+# wrong constant name _reduce_320
+# wrong constant name _reduce_321
+# wrong constant name _reduce_322
+# wrong constant name _reduce_323
+# wrong constant name _reduce_324
+# wrong constant name _reduce_325
+# wrong constant name _reduce_326
+# wrong constant name _reduce_327
+# wrong constant name _reduce_328
+# wrong constant name _reduce_329
+# wrong constant name _reduce_33
+# wrong constant name _reduce_330
+# wrong constant name _reduce_331
+# wrong constant name _reduce_332
+# wrong constant name _reduce_333
+# wrong constant name _reduce_334
+# wrong constant name _reduce_335
+# wrong constant name _reduce_337
+# wrong constant name _reduce_340
+# wrong constant name _reduce_344
+# wrong constant name _reduce_346
+# wrong constant name _reduce_349
+# wrong constant name _reduce_35
+# wrong constant name _reduce_350
+# wrong constant name _reduce_351
+# wrong constant name _reduce_352
+# wrong constant name _reduce_354
+# wrong constant name _reduce_355
+# wrong constant name _reduce_356
+# wrong constant name _reduce_357
+# wrong constant name _reduce_358
+# wrong constant name _reduce_359
+# wrong constant name _reduce_36
+# wrong constant name _reduce_360
+# wrong constant name _reduce_361
+# wrong constant name _reduce_362
+# wrong constant name _reduce_363
+# wrong constant name _reduce_364
+# wrong constant name _reduce_365
+# wrong constant name _reduce_366
+# wrong constant name _reduce_367
+# wrong constant name _reduce_368
+# wrong constant name _reduce_369
+# wrong constant name _reduce_37
+# wrong constant name _reduce_370
+# wrong constant name _reduce_371
+# wrong constant name _reduce_372
+# wrong constant name _reduce_374
+# wrong constant name _reduce_375
+# wrong constant name _reduce_376
+# wrong constant name _reduce_377
+# wrong constant name _reduce_378
+# wrong constant name _reduce_379
+# wrong constant name _reduce_38
+# wrong constant name _reduce_380
+# wrong constant name _reduce_381
+# wrong constant name _reduce_383
+# wrong constant name _reduce_384
+# wrong constant name _reduce_385
+# wrong constant name _reduce_386
+# wrong constant name _reduce_387
+# wrong constant name _reduce_388
+# wrong constant name _reduce_389
+# wrong constant name _reduce_39
+# wrong constant name _reduce_390
+# wrong constant name _reduce_391
+# wrong constant name _reduce_392
+# wrong constant name _reduce_394
+# wrong constant name _reduce_395
+# wrong constant name _reduce_396
+# wrong constant name _reduce_397
+# wrong constant name _reduce_398
+# wrong constant name _reduce_399
+# wrong constant name _reduce_4
+# wrong constant name _reduce_40
+# wrong constant name _reduce_400
+# wrong constant name _reduce_401
+# wrong constant name _reduce_402
+# wrong constant name _reduce_403
+# wrong constant name _reduce_404
+# wrong constant name _reduce_405
+# wrong constant name _reduce_406
+# wrong constant name _reduce_407
+# wrong constant name _reduce_408
+# wrong constant name _reduce_409
+# wrong constant name _reduce_41
+# wrong constant name _reduce_410
+# wrong constant name _reduce_411
+# wrong constant name _reduce_412
+# wrong constant name _reduce_413
+# wrong constant name _reduce_414
+# wrong constant name _reduce_415
+# wrong constant name _reduce_416
+# wrong constant name _reduce_417
+# wrong constant name _reduce_418
+# wrong constant name _reduce_419
+# wrong constant name _reduce_42
+# wrong constant name _reduce_420
+# wrong constant name _reduce_421
+# wrong constant name _reduce_422
+# wrong constant name _reduce_423
+# wrong constant name _reduce_424
+# wrong constant name _reduce_425
+# wrong constant name _reduce_426
+# wrong constant name _reduce_427
+# wrong constant name _reduce_428
+# wrong constant name _reduce_430
+# wrong constant name _reduce_431
+# wrong constant name _reduce_432
+# wrong constant name _reduce_435
+# wrong constant name _reduce_437
+# wrong constant name _reduce_44
+# wrong constant name _reduce_442
+# wrong constant name _reduce_443
+# wrong constant name _reduce_444
+# wrong constant name _reduce_445
+# wrong constant name _reduce_446
+# wrong constant name _reduce_447
+# wrong constant name _reduce_448
+# wrong constant name _reduce_449
+# wrong constant name _reduce_450
+# wrong constant name _reduce_451
+# wrong constant name _reduce_452
+# wrong constant name _reduce_453
+# wrong constant name _reduce_454
+# wrong constant name _reduce_455
+# wrong constant name _reduce_456
+# wrong constant name _reduce_457
+# wrong constant name _reduce_458
+# wrong constant name _reduce_459
+# wrong constant name _reduce_460
+# wrong constant name _reduce_461
+# wrong constant name _reduce_462
+# wrong constant name _reduce_463
+# wrong constant name _reduce_464
+# wrong constant name _reduce_465
+# wrong constant name _reduce_466
+# wrong constant name _reduce_467
+# wrong constant name _reduce_468
+# wrong constant name _reduce_469
+# wrong constant name _reduce_47
+# wrong constant name _reduce_470
+# wrong constant name _reduce_471
+# wrong constant name _reduce_472
+# wrong constant name _reduce_473
+# wrong constant name _reduce_474
+# wrong constant name _reduce_475
+# wrong constant name _reduce_476
+# wrong constant name _reduce_478
+# wrong constant name _reduce_479
+# wrong constant name _reduce_48
+# wrong constant name _reduce_480
+# wrong constant name _reduce_481
+# wrong constant name _reduce_482
+# wrong constant name _reduce_483
+# wrong constant name _reduce_484
+# wrong constant name _reduce_485
+# wrong constant name _reduce_486
+# wrong constant name _reduce_487
+# wrong constant name _reduce_488
+# wrong constant name _reduce_489
+# wrong constant name _reduce_49
+# wrong constant name _reduce_490
+# wrong constant name _reduce_491
+# wrong constant name _reduce_492
+# wrong constant name _reduce_493
+# wrong constant name _reduce_494
+# wrong constant name _reduce_495
+# wrong constant name _reduce_496
+# wrong constant name _reduce_497
+# wrong constant name _reduce_498
+# wrong constant name _reduce_499
+# wrong constant name _reduce_5
+# wrong constant name _reduce_50
+# wrong constant name _reduce_500
+# wrong constant name _reduce_501
+# wrong constant name _reduce_502
+# wrong constant name _reduce_503
+# wrong constant name _reduce_504
+# wrong constant name _reduce_505
+# wrong constant name _reduce_506
+# wrong constant name _reduce_507
+# wrong constant name _reduce_508
+# wrong constant name _reduce_509
+# wrong constant name _reduce_510
+# wrong constant name _reduce_511
+# wrong constant name _reduce_512
+# wrong constant name _reduce_513
+# wrong constant name _reduce_514
+# wrong constant name _reduce_515
+# wrong constant name _reduce_516
+# wrong constant name _reduce_517
+# wrong constant name _reduce_518
+# wrong constant name _reduce_519
+# wrong constant name _reduce_520
+# wrong constant name _reduce_521
+# wrong constant name _reduce_522
+# wrong constant name _reduce_523
+# wrong constant name _reduce_524
+# wrong constant name _reduce_525
+# wrong constant name _reduce_526
+# wrong constant name _reduce_527
+# wrong constant name _reduce_528
+# wrong constant name _reduce_529
+# wrong constant name _reduce_53
+# wrong constant name _reduce_530
+# wrong constant name _reduce_531
+# wrong constant name _reduce_532
+# wrong constant name _reduce_533
+# wrong constant name _reduce_534
+# wrong constant name _reduce_536
+# wrong constant name _reduce_537
+# wrong constant name _reduce_538
+# wrong constant name _reduce_539
+# wrong constant name _reduce_54
+# wrong constant name _reduce_540
+# wrong constant name _reduce_541
+# wrong constant name _reduce_542
+# wrong constant name _reduce_543
+# wrong constant name _reduce_544
+# wrong constant name _reduce_545
+# wrong constant name _reduce_546
+# wrong constant name _reduce_547
+# wrong constant name _reduce_548
+# wrong constant name _reduce_549
+# wrong constant name _reduce_550
+# wrong constant name _reduce_553
+# wrong constant name _reduce_554
+# wrong constant name _reduce_555
+# wrong constant name _reduce_556
+# wrong constant name _reduce_557
+# wrong constant name _reduce_558
+# wrong constant name _reduce_559
+# wrong constant name _reduce_560
+# wrong constant name _reduce_563
+# wrong constant name _reduce_564
+# wrong constant name _reduce_567
+# wrong constant name _reduce_568
+# wrong constant name _reduce_569
+# wrong constant name _reduce_571
+# wrong constant name _reduce_572
+# wrong constant name _reduce_574
+# wrong constant name _reduce_575
+# wrong constant name _reduce_576
+# wrong constant name _reduce_577
+# wrong constant name _reduce_578
+# wrong constant name _reduce_579
+# wrong constant name _reduce_58
+# wrong constant name _reduce_59
+# wrong constant name _reduce_592
+# wrong constant name _reduce_593
+# wrong constant name _reduce_598
+# wrong constant name _reduce_599
+# wrong constant name _reduce_6
+# wrong constant name _reduce_60
+# wrong constant name _reduce_603
+# wrong constant name _reduce_607
+# wrong constant name _reduce_62
+# wrong constant name _reduce_63
+# wrong constant name _reduce_64
+# wrong constant name _reduce_65
+# wrong constant name _reduce_66
+# wrong constant name _reduce_67
+# wrong constant name _reduce_68
+# wrong constant name _reduce_69
+# wrong constant name _reduce_70
+# wrong constant name _reduce_71
+# wrong constant name _reduce_72
+# wrong constant name _reduce_73
+# wrong constant name _reduce_74
+# wrong constant name _reduce_75
+# wrong constant name _reduce_76
+# wrong constant name _reduce_78
+# wrong constant name _reduce_79
+# wrong constant name _reduce_8
+# wrong constant name _reduce_80
+# wrong constant name _reduce_81
+# wrong constant name _reduce_82
+# wrong constant name _reduce_83
+# wrong constant name _reduce_84
+# wrong constant name _reduce_85
+# wrong constant name _reduce_86
+# wrong constant name _reduce_88
+# wrong constant name _reduce_89
+# wrong constant name _reduce_9
+# wrong constant name _reduce_90
+# wrong constant name _reduce_91
+# wrong constant name _reduce_92
+# wrong constant name _reduce_93
+# wrong constant name _reduce_94
+# wrong constant name _reduce_95
+# wrong constant name _reduce_96
+# wrong constant name _reduce_97
+# wrong constant name _reduce_98
+# wrong constant name _reduce_99
+# wrong constant name _reduce_none
+# wrong constant name default_encoding
+# wrong constant name version
+# wrong constant name <static-init>
 # wrong constant name fnmatch?
 # wrong constant name glob
 # wrong constant name make_symlink
+# wrong constant name <Class:InternalUtils>
+# wrong constant name <Class:Module>
+# wrong constant name <Class:V2_2>
+# wrong constant name <Class:V2_3>
+# wrong constant name <Class:V2_4>
+# wrong constant name <Class:V2_5>
+# wrong constant name <Class:V2_6>
+# wrong constant name <static-init>
+# wrong constant name create_module
+# wrong constant name current_ruby_version
+# wrong constant name ignore_warnings
+# wrong constant name keep_only_these_methods!
+# wrong constant name methods_to_keep
+# wrong constant name modules_to_use
+# wrong constant name polyfill_versions_to_use
+# wrong constant name to_f
+# wrong constant name to_hash
+# wrong constant name to_int
+# wrong constant name to_str
+# wrong constant name <Class:M70365961068140>
+# wrong constant name <Class:M70365961547920>
+# wrong constant name <Class:M70365966694800>
+# wrong constant name <Class:M70365967139680>
+# wrong constant name <Class:M70365985560660>
+# wrong constant name <Class:M70365985884560>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <Class:Enumerable>
+# wrong constant name <Class:Kernel>
+# wrong constant name <Class:Math>
+# wrong constant name <Class:Prime>
+# wrong constant name <Class:Vector>
+# wrong constant name max
+# wrong constant name max_by
+# wrong constant name min
+# wrong constant name min_by
+# wrong constant name slice_after
+# wrong constant name slice_when
+# wrong constant name <static-init>
+# wrong constant name itself
+# wrong constant name <static-init>
+# wrong constant name <Class:ClassMethods>
+# wrong constant name log
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <Class:ClassMethods>
+# wrong constant name prime?
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name +@
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <Class:Array>
+# wrong constant name <Class:Enumerable>
+# wrong constant name <Class:Enumerator>
+# wrong constant name <Class:Hash>
+# wrong constant name <Class:Kernel>
+# wrong constant name <Class:Numeric>
+# wrong constant name <Class:Prime>
+# wrong constant name <Class:String>
+# wrong constant name <Class:Struct>
+# wrong constant name bsearch_index
+# wrong constant name dig
+# wrong constant name <static-init>
+# wrong constant name chunk_while
+# wrong constant name grep_v
+# wrong constant name slice_before
+# wrong constant name <static-init>
+# wrong constant name <Class:Lazy>
+# wrong constant name grep_v
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <
+# wrong constant name <=
+# wrong constant name >
+# wrong constant name >=
+# wrong constant name dig
+# wrong constant name fetch_values
+# wrong constant name to_proc
+# wrong constant name <static-init>
+# wrong constant name loop
+# wrong constant name <static-init>
+# wrong constant name negative?
+# wrong constant name positive?
+# wrong constant name <static-init>
+# wrong constant name <Class:ClassMethods>
+# wrong constant name prime?
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name +@
+# wrong constant name -@
+# wrong constant name <Class:ClassMethods>
+# wrong constant name new
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name dig
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <Class:Array>
+# wrong constant name <Class:Comparable>
+# wrong constant name <Class:Dir>
+# wrong constant name <Class:Enumerable>
+# wrong constant name <Class:Enumerator>
+# wrong constant name <Class:File>
+# wrong constant name <Class:Float>
+# wrong constant name <Class:Hash>
+# wrong constant name <Class:IO>
+# wrong constant name <Class:IPAddr>
+# wrong constant name <Class:Integer>
+# wrong constant name <Class:MatchData>
+# wrong constant name <Class:Numeric>
+# wrong constant name <Class:Object>
+# wrong constant name <Class:Pathname>
+# wrong constant name <Class:Regexp>
+# wrong constant name <Class:String>
+# wrong constant name <Class:StringIO>
+# wrong constant name <Class:Symbol>
+# wrong constant name concat
+# wrong constant name sum
+# wrong constant name <static-init>
+# wrong constant name clamp
+# wrong constant name <static-init>
+# wrong constant name <Class:ClassMethods>
+# wrong constant name empty?
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name chunk
+# wrong constant name sum
+# wrong constant name uniq
+# wrong constant name <static-init>
+# wrong constant name <Class:Lazy>
+# wrong constant name chunk_while
+# wrong constant name uniq
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <Class:ClassMethods>
+# wrong constant name empty?
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name ceil
+# wrong constant name floor
+# wrong constant name truncate
+# wrong constant name <static-init>
+# wrong constant name compact
+# wrong constant name compact!
+# wrong constant name transform_values
+# wrong constant name transform_values!
+# wrong constant name <static-init>
+# wrong constant name <Class:ClassMethods>
+# wrong constant name each_line
+# wrong constant name gets
+# wrong constant name lines
+# wrong constant name readline
+# wrong constant name readlines
+# wrong constant name foreach
+# wrong constant name readlines
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <=>
+# wrong constant name ==
+# wrong constant name <static-init>
+# wrong constant name ceil
+# wrong constant name digits
+# wrong constant name floor
+# wrong constant name round
+# wrong constant name truncate
+# wrong constant name <static-init>
+# wrong constant name named_captures
+# wrong constant name values_at
+# wrong constant name <static-init>
+# wrong constant name clone
+# wrong constant name dup
+# wrong constant name finite?
+# wrong constant name infinite?
+# wrong constant name <static-init>
+# wrong constant name clone
+# wrong constant name <static-init>
+# wrong constant name empty?
+# wrong constant name <static-init>
+# wrong constant name match?
+# wrong constant name <static-init>
+# wrong constant name <Class:ClassMethods>
+# wrong constant name casecmp?
+# wrong constant name concat
+# wrong constant name each_line
+# wrong constant name lines
+# wrong constant name match?
+# wrong constant name prepend
+# wrong constant name unpack1
+# wrong constant name new
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <Class:ClassMethods>
+# wrong constant name each_line
+# wrong constant name gets
+# wrong constant name lines
+# wrong constant name readline
+# wrong constant name readlines
+# wrong constant name foreach
+# wrong constant name readlines
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name casecmp?
+# wrong constant name match
+# wrong constant name match?
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <Class:Array>
+# wrong constant name <Class:BigDecimal>
+# wrong constant name <Class:Dir>
+# wrong constant name <Class:Enumerable>
+# wrong constant name <Class:Hash>
+# wrong constant name <Class:Integer>
+# wrong constant name <Class:Kernel>
+# wrong constant name <Class:Set>
+# wrong constant name <Class:String>
+# wrong constant name <Class:Struct>
+# wrong constant name <Class:Time>
+# wrong constant name append
+# wrong constant name prepend
+# wrong constant name <static-init>
+# wrong constant name clone
+# wrong constant name dup
+# wrong constant name <static-init>
+# wrong constant name <Class:ClassMethods>
+# wrong constant name children
+# wrong constant name each_child
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name all?
+# wrong constant name any?
+# wrong constant name none?
+# wrong constant name one?
+# wrong constant name <static-init>
+# wrong constant name slice
+# wrong constant name transform_keys
+# wrong constant name <static-init>
+# wrong constant name <Class:ClassMethods>
+# wrong constant name allbits?
+# wrong constant name anybits?
+# wrong constant name ceil
+# wrong constant name floor
+# wrong constant name nobits?
+# wrong constant name round
+# wrong constant name truncate
+# wrong constant name sqrt
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name yield_self
+# wrong constant name <static-init>
+# wrong constant name ===
+# wrong constant name to_s
+# wrong constant name <static-init>
+# wrong constant name casecmp
+# wrong constant name casecmp?
+# wrong constant name delete_prefix
+# wrong constant name delete_prefix!
+# wrong constant name delete_suffix
+# wrong constant name delete_suffix!
+# wrong constant name each_grapheme_cluster
+# wrong constant name grapheme_clusters
+# wrong constant name start_with?
+# wrong constant name <static-init>
+# wrong constant name <Class:ClassMethods>
+# wrong constant name new
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <Class:ClassMethods>
+# wrong constant name at
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <Class:Array>
+# wrong constant name <Class:Enumerable>
+# wrong constant name <Class:Hash>
+# wrong constant name <Class:Kernel>
+# wrong constant name <Class:OpenStruct>
+# wrong constant name <Class:String>
+# wrong constant name <Class:Struct>
+# wrong constant name difference
+# wrong constant name to_h
+# wrong constant name union
+# wrong constant name <static-init>
+# wrong constant name to_h
+# wrong constant name <static-init>
+# wrong constant name merge
+# wrong constant name merge!
+# wrong constant name to_h
+# wrong constant name update
+# wrong constant name <static-init>
+# uninitialized constant Polyfill::V2_6::Kernel::Complex
+# uninitialized constant Polyfill::V2_6::Kernel::Float
+# uninitialized constant Polyfill::V2_6::Kernel::Integer
+# uninitialized constant Polyfill::V2_6::Kernel::Rational
+# wrong constant name then
+# wrong constant name <static-init>
+# wrong constant name to_h
+# wrong constant name <static-init>
+# wrong constant name split
+# wrong constant name <static-init>
+# wrong constant name to_h
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name get
 # uninitialized constant Prime
 # uninitialized constant Prime
 # wrong constant name <<
@@ -6710,8 +8697,8 @@
 # uninitialized constant Puma::Binder::CONTINUE
 # uninitialized constant Puma::Binder::EARLY_HINTS
 # uninitialized constant Puma::Binder::ERROR_400_RESPONSE
-# Did you mean?  Puma::Binder::ERROR_500_RESPONSE
-#                Puma::Binder::ERROR_408_RESPONSE
+# Did you mean?  Puma::Binder::ERROR_408_RESPONSE
+#                Puma::Binder::ERROR_500_RESPONSE
 #                Puma::Binder::ERROR_404_RESPONSE
 #                Puma::Binder::ERROR_503_RESPONSE
 # uninitialized constant Puma::Binder::ERROR_404_RESPONSE
@@ -6826,8 +8813,8 @@
 # uninitialized constant Puma::Client::CONTINUE
 # uninitialized constant Puma::Client::EARLY_HINTS
 # uninitialized constant Puma::Client::ERROR_400_RESPONSE
-# Did you mean?  Puma::Client::ERROR_500_RESPONSE
-#                Puma::Client::ERROR_408_RESPONSE
+# Did you mean?  Puma::Client::ERROR_408_RESPONSE
+#                Puma::Client::ERROR_500_RESPONSE
 #                Puma::Client::ERROR_404_RESPONSE
 #                Puma::Client::ERROR_503_RESPONSE
 # uninitialized constant Puma::Client::ERROR_404_RESPONSE
@@ -6942,8 +8929,8 @@
 # uninitialized constant Puma::Events::CONTINUE
 # uninitialized constant Puma::Events::EARLY_HINTS
 # uninitialized constant Puma::Events::ERROR_400_RESPONSE
-# Did you mean?  Puma::Events::ERROR_500_RESPONSE
-#                Puma::Events::ERROR_408_RESPONSE
+# Did you mean?  Puma::Events::ERROR_408_RESPONSE
+#                Puma::Events::ERROR_500_RESPONSE
 #                Puma::Events::ERROR_404_RESPONSE
 #                Puma::Events::ERROR_503_RESPONSE
 # uninitialized constant Puma::Events::ERROR_404_RESPONSE
@@ -7061,8 +9048,8 @@
 # uninitialized constant Puma::Server::CONTINUE
 # uninitialized constant Puma::Server::EARLY_HINTS
 # uninitialized constant Puma::Server::ERROR_400_RESPONSE
-# Did you mean?  Puma::Server::ERROR_500_RESPONSE
-#                Puma::Server::ERROR_408_RESPONSE
+# Did you mean?  Puma::Server::ERROR_408_RESPONSE
+#                Puma::Server::ERROR_500_RESPONSE
 #                Puma::Server::ERROR_404_RESPONSE
 #                Puma::Server::ERROR_503_RESPONSE
 # uninitialized constant Puma::Server::ERROR_404_RESPONSE
@@ -8311,6 +10298,91 @@
 # uninitialized constant SQLite3::Database::SYNCHRONOUS_MODES
 # uninitialized constant SQLite3::Database::TEMP_STORE_MODES
 # uninitialized constant SQLite3::Database::WAL_CHECKPOINTS
+# wrong constant name <Class:Boolean>
+# wrong constant name <Class:BooleanMixin>
+# wrong constant name <Class:CoercionError>
+# wrong constant name <Class:Converter>
+# wrong constant name <Class:Date>
+# wrong constant name <Class:DateTime>
+# wrong constant name <Class:EmptyValueError>
+# wrong constant name <Class:Float>
+# wrong constant name <Class:Integer>
+# wrong constant name <Class:InvalidRuleError>
+# wrong constant name <Class:Rule>
+# wrong constant name <Class:String>
+# wrong constant name <Class:Symbol>
+# wrong constant name <Class:Time>
+# wrong constant name <Class:ValidationError>
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name default
+# wrong constant name <static-init>
+# wrong constant name desired_type
+# wrong constant name initialize
+# wrong constant name key
+# wrong constant name value
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name to_bool
+# wrong constant name to_date
+# wrong constant name to_date_time
+# wrong constant name to_false
+# wrong constant name to_float
+# wrong constant name to_int
+# wrong constant name to_time
+# wrong constant name to_true
+# wrong constant name to_type
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name default
+# wrong constant name strict
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name default
+# wrong constant name strict
+# wrong constant name desired_type
+# wrong constant name initialize
+# wrong constant name key
+# wrong constant name <static-init>
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name default
+# wrong constant name strict
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name default
+# wrong constant name strict
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name after
+# wrong constant name before
+# wrong constant name coerce
+# wrong constant name initialize
+# wrong constant name is_valid?
+# wrong constant name <static-init>
+# wrong constant name coerce
+# wrong constant name default
+# wrong constant name strict
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name default
+# wrong constant name strict
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name default
+# wrong constant name strict
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name default
+# wrong constant name strict
+# wrong constant name desired_type
+# wrong constant name initialize
+# wrong constant name key
+# wrong constant name value
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name coerce
+# wrong constant name coerce!
 # uninitialized constant Sass::SCSS::Parser::ANY
 # uninitialized constant Sass::SCSS::Parser::CDC
 # Did you mean?  Sass::SCSS::Parser::CDO
@@ -8356,9 +10428,9 @@
 # Did you mean?  String
 #                StringIO
 #                Spring
-#                STDIN
-#                Sass::SCSS::Parser::STRING1
 #                Sass::SCSS::Parser::STRING2
+#                Sass::SCSS::Parser::STRING1
+#                STDIN
 # uninitialized constant Sass::SCSS::Parser::STRING1
 # Did you mean?  String
 #                StringIO
@@ -8376,8 +10448,8 @@
 # Did you mean?  Sass::SCSS::Parser::STRING_NOINTERP
 #                Sass::SCSS::Parser::STRING1_NOINTERP
 # uninitialized constant Sass::SCSS::Parser::STRING_NOINTERP
-# Did you mean?  Sass::SCSS::Parser::STRING1_NOINTERP
-#                Sass::SCSS::Parser::STRING2_NOINTERP
+# Did you mean?  Sass::SCSS::Parser::STRING2_NOINTERP
+#                Sass::SCSS::Parser::STRING1_NOINTERP
 # uninitialized constant Sass::SCSS::Parser::SUBSTRINGMATCH
 # uninitialized constant Sass::SCSS::Parser::SUFFIXMATCH
 # uninitialized constant Sass::SCSS::Parser::TILDE
@@ -8445,9 +10517,9 @@
 # Did you mean?  String
 #                StringIO
 #                Spring
-#                STDIN
-#                Sass::SCSS::StaticParser::STRING1
 #                Sass::SCSS::StaticParser::STRING2
+#                Sass::SCSS::StaticParser::STRING1
+#                STDIN
 # uninitialized constant Sass::SCSS::StaticParser::STRING1
 # Did you mean?  String
 #                StringIO
@@ -8465,8 +10537,8 @@
 # Did you mean?  Sass::SCSS::StaticParser::STRING_NOINTERP
 #                Sass::SCSS::StaticParser::STRING1_NOINTERP
 # uninitialized constant Sass::SCSS::StaticParser::STRING_NOINTERP
-# Did you mean?  Sass::SCSS::StaticParser::STRING1_NOINTERP
-#                Sass::SCSS::StaticParser::STRING2_NOINTERP
+# Did you mean?  Sass::SCSS::StaticParser::STRING2_NOINTERP
+#                Sass::SCSS::StaticParser::STRING1_NOINTERP
 # uninitialized constant Sass::SCSS::StaticParser::SUBSTRINGMATCH
 # uninitialized constant Sass::SCSS::StaticParser::SUFFIXMATCH
 # uninitialized constant Sass::SCSS::StaticParser::TILDE
@@ -8533,9 +10605,9 @@
 # Did you mean?  String
 #                StringIO
 #                Spring
-#                STDIN
-#                Sass::Script::Lexer::STRING1
 #                Sass::Script::Lexer::STRING2
+#                Sass::Script::Lexer::STRING1
+#                STDIN
 # uninitialized constant Sass::Script::Lexer::STRING1
 # Did you mean?  String
 #                StringIO
@@ -8553,8 +10625,8 @@
 # Did you mean?  Sass::Script::Lexer::STRING_NOINTERP
 #                Sass::Script::Lexer::STRING1_NOINTERP
 # uninitialized constant Sass::Script::Lexer::STRING_NOINTERP
-# Did you mean?  Sass::Script::Lexer::STRING1_NOINTERP
-#                Sass::Script::Lexer::STRING2_NOINTERP
+# Did you mean?  Sass::Script::Lexer::STRING2_NOINTERP
+#                Sass::Script::Lexer::STRING1_NOINTERP
 # uninitialized constant Sass::Script::Lexer::SUBSTRINGMATCH
 # uninitialized constant Sass::Script::Lexer::SUFFIXMATCH
 # uninitialized constant Sass::Script::Lexer::TILDE
@@ -8658,6 +10730,146 @@
 # Did you mean?  TRUE
 # uninitialized constant Socket::WRONLY
 # Did you mean?  Socket::RDONLY
+# wrong constant name enabled_gem_plugins
+# wrong constant name enabled_gem_plugins=
+# wrong constant name enabled_model_plugins
+# wrong constant name enabled_model_plugins=
+# wrong constant name enabled_plugins
+# wrong constant name extra_helper_includes
+# wrong constant name extra_helper_includes=
+# wrong constant name initialize
+# wrong constant name job_generator_class
+# wrong constant name job_generator_class=
+# wrong constant name mailer_generator_class
+# wrong constant name mailer_generator_class=
+# wrong constant name <static-init>
+# wrong constant name find_by_id
+# wrong constant name find_by_id!
+# wrong constant name find_n
+# wrong constant name first_n
+# wrong constant name last_n
+# wrong constant name <static-init>
+# wrong constant name generate_rbi
+# wrong constant name initialize
+# wrong constant name job_class
+# wrong constant name populate_rbi
+# wrong constant name rbi_generator
+# wrong constant name <static-init>
+# wrong constant name generate_rbi
+# wrong constant name initialize
+# wrong constant name mailer_class
+# wrong constant name populate_rbi
+# wrong constant name rbi_generator
+# wrong constant name <static-init>
+# wrong constant name <Class:ColumnType>
+# wrong constant name active_record_type_to_sorbet_type
+# wrong constant name attribute_has_unconditional_presence_validation?
+# wrong constant name model_class
+# wrong constant name nilable_column?
+# wrong constant name time_zone_aware_column?
+# wrong constant name type_for_column_def
+# wrong constant name array_type
+# wrong constant name base_type
+# wrong constant name initialize
+# wrong constant name nilable
+# wrong constant name to_s
+# wrong constant name <static-init>
+# wrong constant name inherited
+# wrong constant name <static-init>
+# wrong constant name <Class:ActiveRecordAssoc>
+# wrong constant name <Class:ActiveRecordAttribute>
+# wrong constant name <Class:ActiveRecordEnum>
+# wrong constant name <Class:ActiveRecordNamedScope>
+# wrong constant name <Class:ActiveRecordQuerying>
+# wrong constant name <Class:ActiveRelationWhereNot>
+# wrong constant name <Class:ActiveStorageMethods>
+# wrong constant name <Class:Base>
+# wrong constant name <Class:CustomFinderMethods>
+# wrong constant name <Class:EnumerableCollections>
+# uninitialized constant SorbetRails::ModelPlugins::RUBYGEMS_ACTIVATION_MONITOR
+# wrong constant name <Class:UnrecognizedPluginName>
+# wrong constant name get_plugin_by_name
+# wrong constant name get_plugins
+# wrong constant name register_plugin
+# wrong constant name register_plugin_by_name
+# wrong constant name set_plugins
+# wrong constant name assoc_should_be_untyped?
+# wrong constant name polymorphic_assoc?
+# wrong constant name populate_collection_assoc_getter_setter
+# wrong constant name populate_single_assoc_getter_setter
+# wrong constant name relation_should_be_untyped?
+# wrong constant name <static-init>
+# wrong constant name generate_enum_methods
+# wrong constant name value_type_for_attr_writer
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name create_has_many_methods
+# wrong constant name create_has_one_methods
+# wrong constant name <static-init>
+# wrong constant name available_classes
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name available_classes
+# wrong constant name generate_base_rbi
+# wrong constant name generate_rbi
+# wrong constant name initialize
+# wrong constant name run_plugins
+# wrong constant name <static-init>
+# wrong constant name add_relation_query_method
+# wrong constant name exists_class_method?
+# wrong constant name exists_instance_method?
+# wrong constant name habtm_class?
+# wrong constant name model_assoc_proxy_class_name
+# wrong constant name model_assoc_relation_class_name
+# wrong constant name model_class_name
+# wrong constant name model_module_name
+# wrong constant name model_query_methods_returning_assoc_relation_module_name
+# wrong constant name model_query_methods_returning_relation_module_name
+# wrong constant name model_relation_class_name
+# wrong constant name model_relation_type_alias
+# wrong constant name model_relation_type_class_name
+# wrong constant name <static-init>
+# uninitialized constant SorbetRails::Railtie::ABSTRACT_RAILTIES
+# wrong constant name <static-init>
+# wrong constant name <Class:ParsedParamDef>
+# uninitialized constant SorbetRails::SorbetUtils::RUBYGEMS_ACTIVATION_MONITOR
+# wrong constant name <Class:UnexpectedParam>
+# wrong constant name default
+# wrong constant name default=
+# wrong constant name initialize
+# wrong constant name kind
+# wrong constant name name
+# wrong constant name prefix
+# wrong constant name prefix=
+# wrong constant name suffix
+# wrong constant name suffix=
+# wrong constant name type_str
+# wrong constant name <static-init>
+# wrong constant name inherited
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name extract_default_value_for_params!
+# wrong constant name get_ordered_parameters_with_type
+# wrong constant name node_to_s
+# wrong constant name parameters_from_method_def
+# wrong constant name class_name
+# wrong constant name initialize
+# wrong constant name strict_mode
+# wrong constant name <static-init>
+# wrong constant name inherited
+# wrong constant name <static-init>
+# wrong constant name rails_eager_load_all!
+# wrong constant name valid_method_name?
+# wrong constant name <static-init>
+# wrong constant name config
+# wrong constant name configure
+# wrong constant name register_configured_plugins
 # uninitialized constant SortedSet::InspectKey
 # wrong constant name initialize
 # wrong constant name setup
@@ -8785,6 +10997,7 @@
 # wrong constant name shellescape
 # wrong constant name shellsplit
 # wrong constant name bol?
+# wrong constant name fixed_anchor?
 # wrong constant name initialize
 # wrong constant name filter
 # wrong constant name <Class:Struct>
@@ -8798,25 +11011,24 @@
 # wrong constant name T.noreturn
 # wrong constant name T.noreturn
 # wrong constant name T.untyped
-# uninitialized constant #<Class:0x00007fb56c925008>::ACTIONS
+# uninitialized constant #<Class:0x00007ffebada8458>::ACTIONS
 # Did you mean?  Tee::ACTIONS
-# uninitialized constant #<Class:0x00007fb56c925008>::CALLBACKS
+# uninitialized constant #<Class:0x00007ffebada8458>::CALLBACKS
 # Did you mean?  Tee::Callbacks
 #                Tee::Callback
 #                Tee::CALLBACKS
-# uninitialized constant #<Class:0x00007fb56c925008>::CALLBACK_FILTER_TYPES
+# uninitialized constant #<Class:0x00007ffebada8458>::CALLBACK_FILTER_TYPES
 # Did you mean?  Tee::CALLBACK_FILTER_TYPES
-# uninitialized constant #<Class:0x00007fb56c925008>::CALL_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007ffebada8458>::CALL_COMPILABLE_REGEXP
 # Did you mean?  Tee::CALL_COMPILABLE_REGEXP
-# wrong constant name <Class:GeneratedAssociationMethods>
-# wrong constant name <Class:GeneratedAttributeMethods>
-# uninitialized constant #<Class:0x00007fb56c925008>::MAX_PASSWORD_LENGTH_ALLOWED
+# wrong constant name <Class:GeneratedRelationMethods>
+# uninitialized constant #<Class:0x00007ffebada8458>::MAX_PASSWORD_LENGTH_ALLOWED
 # Did you mean?  Tee::MAX_PASSWORD_LENGTH_ALLOWED
-# uninitialized constant #<Class:0x00007fb56c925008>::NAME_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007ffebada8458>::NAME_COMPILABLE_REGEXP
 # Did you mean?  Tee::NAME_COMPILABLE_REGEXP
-# uninitialized constant #<Class:0x00007fb56c925008>::RESTRICTED_CLASS_METHODS
+# uninitialized constant #<Class:0x00007ffebada8458>::RESTRICTED_CLASS_METHODS
 # Did you mean?  Tee::RESTRICTED_CLASS_METHODS
-# uninitialized constant #<Class:0x00007fb56c925008>::UNASSIGNABLE_KEYS
+# uninitialized constant #<Class:0x00007ffebada8458>::UNASSIGNABLE_KEYS
 # Did you mean?  Tee::UNASSIGNABLE_KEYS
 # wrong constant name after_add_for_holes
 # wrong constant name after_add_for_holes=
@@ -8833,17 +11045,65 @@
 # wrong constant name before_remove_for_holes=
 # wrong constant name before_remove_for_holes?
 # wrong constant name validate_associated_records_for_holes
-# wrong constant name build_course
-# wrong constant name course
-# wrong constant name course=
-# wrong constant name create_course
-# wrong constant name create_course!
-# wrong constant name hole_ids
+# uninitialized constant Tee::ActiveRecord_AssociationRelation::CLAUSE_METHODS
+# Did you mean?  Tee::ActiveRecord_AssociationRelation::ClassMethods
+#                Tee::ClassMethods
+#                Tee::ActiveRecord_AssociationRelation::VALUE_METHODS
+# uninitialized constant Tee::ActiveRecord_AssociationRelation::DEFAULT_VALUES
+# uninitialized constant Tee::ActiveRecord_AssociationRelation::FROZEN_EMPTY_ARRAY
+# Did you mean?  Tee::ActiveRecord_AssociationRelation::FROZEN_EMPTY_HASH
+# uninitialized constant Tee::ActiveRecord_AssociationRelation::FROZEN_EMPTY_HASH
+# Did you mean?  Tee::ActiveRecord_AssociationRelation::FROZEN_EMPTY_ARRAY
+# uninitialized constant Tee::ActiveRecord_AssociationRelation::INVALID_METHODS_FOR_DELETE_ALL
+# uninitialized constant Tee::ActiveRecord_AssociationRelation::MULTI_VALUE_METHODS
+# uninitialized constant Tee::ActiveRecord_AssociationRelation::ONE_AS_ONE
+# uninitialized constant Tee::ActiveRecord_AssociationRelation::ORDER_IGNORE_MESSAGE
+# uninitialized constant Tee::ActiveRecord_AssociationRelation::SINGLE_VALUE_METHODS
+# uninitialized constant Tee::ActiveRecord_AssociationRelation::STRUCTURAL_OR_METHODS
+# uninitialized constant Tee::ActiveRecord_AssociationRelation::VALID_DIRECTIONS
+# uninitialized constant Tee::ActiveRecord_AssociationRelation::VALID_UNSCOPING_VALUES
+# uninitialized constant Tee::ActiveRecord_AssociationRelation::VALUE_METHODS
+# Did you mean?  Tee::ActiveRecord_AssociationRelation::CLAUSE_METHODS
+# uninitialized constant Tee::ActiveRecord_Associations_CollectionProxy::CLAUSE_METHODS
+# Did you mean?  Tee::ActiveRecord_Associations_CollectionProxy::ClassMethods
+#                Tee::ClassMethods
+#                Tee::ActiveRecord_Associations_CollectionProxy::VALUE_METHODS
+# uninitialized constant Tee::ActiveRecord_Associations_CollectionProxy::DEFAULT_VALUES
+# uninitialized constant Tee::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_ARRAY
+# Did you mean?  Tee::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_HASH
+# uninitialized constant Tee::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_HASH
+# Did you mean?  Tee::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_ARRAY
+# uninitialized constant Tee::ActiveRecord_Associations_CollectionProxy::INVALID_METHODS_FOR_DELETE_ALL
+# uninitialized constant Tee::ActiveRecord_Associations_CollectionProxy::MULTI_VALUE_METHODS
+# uninitialized constant Tee::ActiveRecord_Associations_CollectionProxy::ONE_AS_ONE
+# uninitialized constant Tee::ActiveRecord_Associations_CollectionProxy::ORDER_IGNORE_MESSAGE
+# uninitialized constant Tee::ActiveRecord_Associations_CollectionProxy::SINGLE_VALUE_METHODS
+# uninitialized constant Tee::ActiveRecord_Associations_CollectionProxy::STRUCTURAL_OR_METHODS
+# uninitialized constant Tee::ActiveRecord_Associations_CollectionProxy::VALID_DIRECTIONS
+# uninitialized constant Tee::ActiveRecord_Associations_CollectionProxy::VALID_UNSCOPING_VALUES
+# uninitialized constant Tee::ActiveRecord_Associations_CollectionProxy::VALUE_METHODS
+# Did you mean?  Tee::ActiveRecord_Associations_CollectionProxy::CLAUSE_METHODS
+# uninitialized constant Tee::ActiveRecord_Relation::CLAUSE_METHODS
+# Did you mean?  Tee::ActiveRecord_Relation::ClassMethods
+#                Tee::ClassMethods
+#                Tee::ActiveRecord_Relation::VALUE_METHODS
+# uninitialized constant Tee::ActiveRecord_Relation::DEFAULT_VALUES
+# uninitialized constant Tee::ActiveRecord_Relation::FROZEN_EMPTY_ARRAY
+# Did you mean?  Tee::ActiveRecord_Relation::FROZEN_EMPTY_HASH
+# uninitialized constant Tee::ActiveRecord_Relation::FROZEN_EMPTY_HASH
+# Did you mean?  Tee::ActiveRecord_Relation::FROZEN_EMPTY_ARRAY
+# uninitialized constant Tee::ActiveRecord_Relation::INVALID_METHODS_FOR_DELETE_ALL
+# uninitialized constant Tee::ActiveRecord_Relation::MULTI_VALUE_METHODS
+# uninitialized constant Tee::ActiveRecord_Relation::ONE_AS_ONE
+# uninitialized constant Tee::ActiveRecord_Relation::ORDER_IGNORE_MESSAGE
+# uninitialized constant Tee::ActiveRecord_Relation::SINGLE_VALUE_METHODS
+# uninitialized constant Tee::ActiveRecord_Relation::STRUCTURAL_OR_METHODS
+# uninitialized constant Tee::ActiveRecord_Relation::VALID_DIRECTIONS
+# uninitialized constant Tee::ActiveRecord_Relation::VALID_UNSCOPING_VALUES
+# uninitialized constant Tee::ActiveRecord_Relation::VALUE_METHODS
+# Did you mean?  Tee::ActiveRecord_Relation::CLAUSE_METHODS
 # wrong constant name hole_ids=
-# wrong constant name holes
-# wrong constant name holes=
 # wrong constant name reload_course
-# wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name after_add_for_holes
 # wrong constant name after_add_for_holes=
@@ -9036,6 +11296,21 @@
 # Did you mean?  TracePoint
 # uninitialized constant Tracer
 # Did you mean?  TracePoint
+# wrong constant name <Class:CoercionError>
+# wrong constant name <Class:Configuration>
+# wrong constant name <Class:Converter>
+# wrong constant name <Class:ShapeError>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name raise_coercion_error
+# wrong constant name raise_coercion_error=
+# wrong constant name from
+# wrong constant name initialize
+# wrong constant name new
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name []
 # wrong constant name <Class:File>
 # wrong constant name buffer_open
 # wrong constant name new2
@@ -9191,6 +11466,7 @@
 # wrong constant name make_components_hash
 # wrong constant name get_encoding
 # wrong constant name <static-init>
+# wrong constant name inherited
 # wrong constant name <Class:ZeroVectorError>
 # wrong constant name []
 # wrong constant name []=
@@ -9308,8 +11584,8 @@
 # Did you mean?  WebSocket::Driver::Client::RSV2
 #                WebSocket::Driver::Client::RSV3
 # uninitialized constant WebSocket::Driver::Client::RSV2
-# Did you mean?  WebSocket::Driver::Client::RSV1
-#                WebSocket::Driver::Client::RSV3
+# Did you mean?  WebSocket::Driver::Client::RSV3
+#                WebSocket::Driver::Client::RSV1
 # uninitialized constant WebSocket::Driver::Client::RSV3
 # Did you mean?  WebSocket::Driver::Client::RSV2
 #                WebSocket::Driver::Client::RSV1
