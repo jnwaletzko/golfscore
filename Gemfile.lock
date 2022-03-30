@@ -114,11 +114,11 @@ GEM
       guard (~> 2.1)
       guard-compat (~> 1.1)
       rspec (>= 2.99.0, < 4.0)
-    highline (2.0.3)
     guard-standardrb (0.2.0)
       guard (>= 2.0.0)
       guard-compat (~> 1.0)
       standardrb
+    highline (2.0.3)
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
     jbuilder (2.10.1)
@@ -167,7 +167,8 @@ GEM
       byebug (~> 11.0)
       pry (~> 0.13.0)
     public_suffix (4.0.6)
-    puma (3.12.6)
+    puma (4.3.12)
+      nio4r (~> 2.0)
     rack (2.2.3)
     rack-proxy (0.6.5)
       rack
@@ -283,6 +284,13 @@ GEM
       sorbet-runtime (>= 0.5)
     sorbet-runtime (0.5.5947)
     sorbet-static (0.5.5947-universal-darwin-14)
+    sorbet-static (0.5.5947-universal-darwin-15)
+    sorbet-static (0.5.5947-universal-darwin-16)
+    sorbet-static (0.5.5947-universal-darwin-17)
+    sorbet-static (0.5.5947-universal-darwin-18)
+    sorbet-static (0.5.5947-universal-darwin-19)
+    sorbet-static (0.5.5947-universal-darwin-20)
+    sorbet-static (0.5.5947-x86_64-linux)
     spring (2.1.1)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -346,7 +354,7 @@ DEPENDENCIES
   listen (>= 3.0.5, < 3.2)
   pry
   pry-byebug
-  puma (~> 3.11)
+  puma (~> 4.3)
   rails (~> 6.0.0)
   react-rails
   rspec-rails
